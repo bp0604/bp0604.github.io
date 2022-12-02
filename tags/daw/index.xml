@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>daw on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/daw/</link>
+    <description>Recent content in daw on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/daw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reaper DAW 101 part6 -- 远程控制</title>
+      <link>https://bp0604.github.io/post/reaper-daw-101-part6-remote-control/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/reaper-daw-101-part6-remote-control/</guid>
+      <description>Reaper 有很强大的远程网页控制面板，比其他daw强大很多。</description>
+      <content:encoded><![CDATA[<h2 id="网络模式推荐">网络模式（推荐）</h2>
+<p>选择 Web browser interface</p>
+<p>可设置用户名，密码。</p>
+<p>Default interface：
+如果是index.html，有控制按钮。<br>
+有多组监听轨道的情形：选择more_me.html，然后选择监听轨道。</p>
+<p>如何想使用域名访问：</p>
+<p>勾选 Use rc.reaper.fm<br>
+ID取个名字，
+就会有个域名的链接地址。</p>
+<p>iPad或其他终端上打开链接即可，</p>
+<p>当前可用设置链接为：http://192.168.2.32:18080</p>
+<hr>
+<h2 id="midi控制器模式">midi控制器模式</h2>
+<p>此处未演示</p>
+<hr>
+<h2 id="osc模式">OSC模式</h2>
+<p>Preference → Control/OSC/web</p>
+<p>选择 OSC</p>
+<h3 id="daw设置">daw设置</h3>
+<p>Device name: iPad</p>
+<p>Pattern config: Default, LogicTouch for phone?</p>
+<p>Mode: Configure device IP +local port</p>
+<p>Device port: 9005</p>
+<p>Local listen port: 8005 </p>
+<p>Device IP: fix me</p>
+<p>Press Listen Button</p>
+<p>Note:</p>
+<p>如果有多个远程控制，端口号不能重复。</p>
+<h3 id="ipad设置">iPad设置</h3>
+<p>TouchOSC</p>
+<p>Layout: LogicPad</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Reaper for podcast - 初学者快速上手</title>
+      <link>https://bp0604.github.io/post/reaper-for-podcast-beginner-guide/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/reaper-for-podcast-beginner-guide/</guid>
+      <description>Reaper 初学者快速上手，包含剪辑的一些快捷键</description>
+      <content:encoded><![CDATA[<p>链接</p>
+<p><a href="https://www.youtube.com/watch?v=CPeUilYS4rc&amp;t=910s">Reaper for Podcasting: A Beginner&rsquo;s Guide for New Users</a></p>
+<hr>
+<h2 id="设置">设置</h2>
+<p>自动保存备份</p>
+<hr>
+<h2 id="操作">操作</h2>
+<p>波形放大点：cmd shift n(如果split后有多断音频，双击全选，shift n更合适)</p>
+<p>（标准化Normalise Items : Control+Shift+N）</p>
+<p>仍然可以调整Gain值。</p>
+<p>点击，滚轮上下方向放大</p>
+<p>s - split</p>
+<p>delete</p>
+<p>tips: 勾选9个方框的图标后，删除时，会自动向前移吸附。</p>
+<p>选中中间的片段 ctrl + delete删除，使用这种方式快捷。</p>
+<p>勾选，选项-连续滚动，这样，播放时，波形会跟随显示</p>
+<p>可以 grid line 的图标不选，不然只能选择在网格的位置</p>
+<p>fade，拖动两个音频交叉</p>
+<p>导出：file-render</p>
+<p>Mono</p>
+<p>mp3 128kpbs</p>
+<hr>
+<h2 id="后期">后期</h2>
+<p>目前，明显有开头音量大的问题，使用压缩ReaComp，参数为预设。</p>
+<hr>
+<h2 id="参考">参考</h2>
+<p>快捷键大全：</p>
+<p><a href="https://reaperaccessibility.com/index.php/Reaper_shortcut_key_list_by_headings">https://reaperaccessibility.com/index.php/Reaper_shortcut_key_list_by_headings</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

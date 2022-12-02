@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>youtube on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/youtube/</link>
+    <description>Recent content in youtube on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Thu, 06 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postman Beginner&#39;s Course - API Testing</title>
+      <link>https://bp0604.github.io/post/youtube-postman-beginners-course-api-testing/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/youtube-postman-beginners-course-api-testing/</guid>
+      <description>Youtube上使用Postman集成测试的入门教程，涉及newman的使用。</description>
+      <content:encoded><![CDATA[<h2 id="链接">链接</h2>
+<p><a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">Postman Beginner&rsquo;s Course - API Testing</a></p>
+<h2 id="详细">详细</h2>
+<p>设置 变量 {{baseUrl}}<br>
+scope为collection</p>
+<p>edit collection 选到 Variables页<br>
+initial value 是shared的。<br>
+而 current value 是私有的。</p>
+<p>accessToken</p>
+<p>Bearer Token<br>
+{{accessToken}}</p>
+<p>json 选 raw</p>
+<pre tabindex="0"><code>{
+    &#34;userId&#34;: 1,
+    &#34;id&#34;: 2,
+    &#34;title&#34;: &#34;qui est esse&#34;,
+    &#34;body&#34;: &#34;est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla&#34;
+}
+</code></pre><p>Randon test data</p>
+<pre tabindex="0"><code>{
+    &#34;title&#34;: &#34;{{$randomJobTitle}}&#34;,
+    &#34;body&#34;: &#34;bar&#34;,
+    &#34;userId&#34;: 1000
+}
+</code></pre><p>在console 中查看<br>
+Request Body 中内容</p>
+<p>关闭Tabs<br>
+Force to close tabs</p>
+<p>Unit 2 - Test automation with Postman</p>
+<pre><code>⌨️ Lesson 19 - Introduction to test automation (1:01:52)
+⌨️ Lesson 20 - Your first API tests (1:02:52​)
+⌨️ Lesson 21 - Assignment (1:14:55)
+⌨️ Lesson 22 - Postman variables (1:19:20)
+⌨️ Lesson 23 - Extracting data from the response (1:24:13)
+⌨️ Lesson 24 - Assignment (1:36:51)
+⌨️ Lesson 25 - Assignment (1:38:08)
+⌨️ Lesson 26 - Collection runner (1:42:52)
+⌨️ Lesson 27 - Request execution order (1:49:00)
+⌨️ Lesson 28 - Postman monitors (1:53:32)
+⌨️ Lesson 29 - Newman (1:57:45)
+⌨️ Lesson 30 - HTML reports with Newman (2:01:58)
+⌨️ Lesson 30 - CI/CD overview (2:05:28)
+⌨️ Lesson 31 - Conclusion (2:08:24)
+</code></pre>
+<p>Tests 页面 &amp; Test result<br>
+有示范<br>
+<a href="https://learning.postman.com/docs/writing-scripts/test-scripts/">https://learning.postman.com/docs/writing-scripts/test-scripts/</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;Your test name&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jsonData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">jsonData</span>.<span style="color:#a6e22e">value</span>).<span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">eql</span>(<span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">respone</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">resource</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nonFictionBooks</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">book</span>) =&gt; <span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">availabel</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">true</span> )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nonFictionBooks</span>[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">book</span>).<span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">be</span>.<span style="color:#a6e22e">an</span>(<span style="color:#e6db74">&#39;object&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">be</span>.<span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">eql</span>..
+</span></span></code></pre></div><p>Global variables</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">globals</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#34;variable key&#34;</span>, <span style="color:#e6db74">&#34;variable value&#34;</span>)
+</span></span></code></pre></div><h2 id="collection-runner">Collection Runner</h2>
+<p>底部的 runner<br>
+然后把 collection 拖过来</p>
+<h1 id="execuate-order">execuate order</h1>
+<p>代码：</p>
+<pre tabindex="0"><code>postman.setNextRequest(&#34;API Status&#34;);
+postman.setNextRequest(null);
+</code></pre><p>如果 循环设置了， 就会一直运行。</p>
+<h1 id="monitor-线上功能">monitor 线上功能</h1>
+<p>不用点击运行。<br>
+Monitor Collection</p>
+<p>Everyday 。。。</p>
+<p>会使用 initial value</p>
+<h1 id="newman-重点">Newman 重点</h1>
+<p>cli tool</p>
+<p>newman &ndash;version</p>
+<p>Collection -&gt; Export<br>
+api key<br>
+share 但更改不会更新，需要重新生成</p>
+<p>newman run export.json</p>
+<p>Running collections on the command line with Newman<br>
+<a href="https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/">https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/</a></p>
+<p>Newman with Docker<br>
+<a href="https://learning.postman.com/docs/running-collections/using-newman-cli/newman-with-docker/">https://learning.postman.com/docs/running-collections/using-newman-cli/newman-with-docker/</a></p>
+<p><a href="https://github.com/postmanlabs/newman">https://github.com/postmanlabs/newman</a></p>
+<h2 id="使用参考--realworld">使用参考  realworld</h2>
+<h2 id="html-report-for-newman">html report for newman</h2>
+<p>newman-reporter-htmlextra</p>
+<p>newman run export.json &ndash;exportors=cli,htmlextra</p>
+<h1 id="cicd-overview">Ci/cd overview</h1>
+<h1 id="more">More</h1>
+<p>mock</p>
+<p>data-driver test<br>
+customer-data.csv</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

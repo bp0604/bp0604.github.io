@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>realtime on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/realtime/</link>
+    <description>Recent content in realtime on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/realtime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实时监控log日志文件夹下文件</title>
+      <link>https://bp0604.github.io/post/realtime-monitoring-log-files-under-folder/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/realtime-monitoring-log-files-under-folder/</guid>
+      <description>简单工具的有效利用。</description>
+      <content:encoded><![CDATA[<h2 id="使用-tail-命令">使用 tail 命令</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -f /var/log/syslog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tail -f /var/log/syslog /var/log/dmesg
+</span></span></code></pre></div><p>没有颜色</p>
+<h2 id="使用-lnav日志文件浏览器httpslnavorgfeatures">使用 <a href="https://lnav.org/features">lnav（日志文件浏览器）</a></h2>
+<pre tabindex="0"><code>sudo apt install lnav # Ubuntu
+
+sudo dnf install lnav # Fedora
+</code></pre><p>默认显示 <code>/var/log</code> 中的所有日志并开始实时监控。
+还可通过 SQL 查询日志文件</p>
+<h3 id="示范">示范</h3>
+<p>从apache访问日志文件中获取前10个客户端IP地址，并将结果以CSV格式写入标准：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lnav -n <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -c <span style="color:#e6db74">&#39;;SELECT c_ip, count(*) AS total FROM access_log GROUP BY c_ip ORDER BY total DESC LIMIT 10&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -c <span style="color:#e6db74">&#39;:write-csv-to -&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    access.log
+</span></span></code></pre></div><h3 id="lnav-dochttpsdocslnavorgenlatestintrohtml"><a href="https://docs.lnav.org/en/latest/intro.html">Lnav doc</a></h3>
+<p>说实话，在Terminal中显示不直观。还是有UI界面的好用些。<br>
+比如Loki或是Kibana或其他。</p>
+<h2 id="systemd-的-journalctl">systemd 的 journalctl</h2>
+<p>systemd 通过 <code>journalctl</code> 提供日志服务</p>
+<pre tabindex="0"><code>journalctl -f
+
+显示带有解释的错误
+journalctl -xb -p 3
+
+时间控制
+journalctl --since &#34;2020-12-04 06:00:00&#34;
+journalctl --since &#34;2020-12-03&#34; --until &#34;2020-12-05 03:00:00&#34;
+journalctl --since yesterday
+journalctl --since 09:00 --until &#34;1 hour ago&#34;
+</code></pre>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

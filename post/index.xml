@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/post/</link>
+    <description>Recent content in Posts on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mkdocs及静态Markdown站点的思考</title>
+      <link>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</guid>
+      <description>静态Markdown站点需要有什么样的功能的一些思考。</description>
+      <content:encoded><![CDATA[<h2 id="background">Background</h2>
+<p>人人都是产品经理，<br>
+人人都是内容创作者vloger，<br>
+在知识快速迭代的今天， 知识的实践整理输出是必须的。<br>
+而静态markdown站点，无疑是辅助我们输出整理的有效武器。<br>
+弄清哪些功能是必须的，有助于我们选择适应的工具。</p>
+<h2 id="必须的功能">必须的功能</h2>
+<ul>
+<li>支持原生的 markdown 渲染，这样即使迁移也不用更改。</li>
+<li>自带搜索的功能，不需要集成。且搜索页最好当前页显示，减少页面跳转！</li>
+<li>支持文档目录，与文章内大纲的显示，便于长文时导航。</li>
+<li>生成速度不能太慢，特别是文章比较多时。</li>
+<li>最好开箱即用，以便聚焦整理输出。</li>
+</ul>
+<h2 id="参考站点">参考站点</h2>
+<p>mkdocs
+<a href="https://cook.aiurs.co/">程序员做饭指南</a></p>
+<h2 id="修改记录">修改记录</h2>
+<ul>
+<li>2022-12-02：初版</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>50 岁码农面试记</title>
+      <link>https://bp0604.github.io/post/50-year-old-coder-interview/</link>
+      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/50-year-old-coder-interview/</guid>
+      <description>作者是加拿大华人，一直从事数据库管理。工作了 20 年后，他想转开发，于是猛刷 Leetcode，开始投简历求职。</description>
+      <content:encoded><![CDATA[<h2 id="出处">出处</h2>
+<p><a href="https://www.ruanyifeng.com/blog/2022/10/weekly-issue-227.html">https://www.ruanyifeng.com/blog/2022/10/weekly-issue-227.html</a>
+<a href="https://www.1point3acres.com/bbs/thread-918311-1-1.html">50 岁码农面试记</a></p>
+<p>我摘录下重点。（使用trilium剪切）</p>
+<h2 id="感想">感想</h2>
+<p>楼主学习力与执行力都很强，还是需要下狠功夫。
+是属于那种学习又好又拼命之类的人。</p>
+<p>由于现在技术发展太快了，我们还是要适度聚焦，深入技能。</p>
+<p>楼主先使用的python，后来看是去看了java。
+leetcode看来国外也很流行了。系统设计题是不可少的。
+国外还是很流行AWS的，再加上现在腾讯云，阿里云各种收费了。
+还是看下国外的相应服务是否免费白嫖下？</p>
+<p>最近我对比了招聘要求，在很多方面需要重点笔记式学习：</p>
+<ul>
+<li>面向对象模型设计（UML，流程图）</li>
+<li>DDD</li>
+<li>数据挖掘，繁琐事情，UI展示（python，orange，streamlit，excel/csv，mysql&hellip;）</li>
+<li>大数据（从pyspark开始，其Dataframe与pandas的类似），,elasticsearch搜索方面无比重要，也需要完整练习下。</li>
+<li>aigc流行，显示了深度学习的威力，以及其他行业的应用（推荐系统，音频降噪，视频提帧）。</li>
+</ul>
+<p>语言方面（重点看下serveless相关）：</p>
+<ul>
+<li>java</li>
+<li>python</li>
+<li>react及前端</li>
+<li>有空golang</li>
+</ul>
+<p>可以在Youtube和Bilibili上找下相关的视频，还有freecodecamp，并需要实践练习下。（光说不练假把式，<strong>要动手，可录音，可手写，然后再对比</strong>！！）</p>
+<h2 id="正文">正文</h2>
+<pre><code>长文摘要：20年前工科硕士毕业后即混入IT部门工作至今，今年1月萌生换工作意愿，于是从头学习数据结构和算法，3月开始Leetcode刷题，4月底开始投简历，7月底小厂上岸。
+</code></pre>
+<p>20YOE的Senior SDE不会任何一门编程语言的吗？是的，我这20年来只会在Oracle上用SQL写点儿查询，堆栈链表树通通没用过，TCP/IP是啥玩意儿，分布式系统听都没听说，更别提什么AWS、Azure了。<br>
+换工作的原因？就是嫌目前薪资太低了，年薪80K加元，没有股票，每年薪资涨幅只有可怜的1.5%，连通胀都跑不赢。<br>
+为什么呆了20年才想起跳槽？对于咸鱼来讲目前这份工作只要忽视薪资低这一个缺点外，其他全是优点：假期多福利好工作清闲无压力无裁员风险。既然这么多优点也就难怪很多同事直接躺平等退休了，而且心知肚明自己就是一只弱鸡。80K在地里不值一提，但在加拿大可也属于TOP 15%了。井底躺久了也一直懒得去了解外面的劳工市场行情，觉得这辈子也就这样了吧。</p>
+<p>萌生了换工作的意愿之后，首先就是上网搜集信息，找来找去找到了一亩三分地。不看不要紧，一看吓一跳，如今NG起薪都已经是我薪资的2倍了？！300K的low穿地心包？！<br>
+种一颗树最好的时机是20年前，其次是现在，那就开干吧。先把地里的置顶文章读了一遍，搞清楚找工的步骤流程。<br>
+先写简历吧，于是把20年前毕业找工作时的简历翻了出来，加上现在这段的20年经验。工作内容？即使干了20年都乏善可陈。SKILLS？除了SQL和Oracle还能写点啥呢？什么编程语言都不会。算了别写简历，先看书吧。<br>
+下载了一本<a href="https://link.1point3acres.com/?url=https%3A%2F%2Fwww.amazon.com%2FStructures-Algorithms-Python-Michael-Goodrich%2Fdp%2F1118290275">Data Structures and Algorithms in Python</a>，开始学习数据结构和算法以及Python。一旦读起来才发现自己以前简直是个FIVE，面向对象怎么编程？还有位运算这种骚操作？开始3章还认认真真把每一章后面的习题都做一遍，到了后来就懒得做了，红黑树这转来转去的谁看得懂，不懂的就跳过，越到后面跳过的越多。<br>
+3月了，读书读不下去，那就上Leetcode上刷刷题吧，试试就逝世。第一道2sum就把我困住了，双重循环不对吗？咋还超时了？！卧槽dictionary还能这么用，为什么用hashmap的时间复杂度是O(1)呀？又回头去翻算法书&hellip;&hellip;<br>
+就这么一边刷题一边温习书本，2周约莫刷了100道题。然后某天点开曾刷过的题，咦？这题我好像见过，可是怎么解的来着？好像是&hellip;..算了还是看看以前怎么做的来着吧。<br>
+就这么一边刷新题一边复习旧题，时间就来到了4月，刷完300多题慢慢也有了感觉。随便提一句，Leetcode的会员是我觉得最值的会员消费了，也是我找工期间的唯一花费了，其他的所有书籍教程都是网上白嫖的。<br>
+简历上终于可以大着胆子加上一门编程语言了，参考了各种简历模板和本单位的招聘广告，工作经验也强行凑满了半页纸。<br>
+怕年龄歧视不敢写自己的读书工作日期，我能理解这种顾虑。可是我都50了，视频面试的时候还藏得住一张老脸？如果公司有年龄歧视，就算我真进了也不可能感觉舒服。所以我还是把所有的日期都标得清清楚楚，任谁看一眼就能估算出年龄了。<br>
+学历，我并非CS出身，20年前还没有转码一说，面试也不考编程，有个工科硕士学历很容易就混进去了，同组的还有高中学历哩。最后我还是照实写了自己的天坑专业，首先工作这么多年后其实已经没人关心你的学历了，学历都是放在简历最后面。其次如果公司因此就不要我，那么你们公司也不是我想去的地方。<br>
+接下来就是投简历，各大找工网站我都注册并完善信息上传简历了，如今看来其实没什么卵用，反而是浪费时间。最有效的方式是完善自己的LinkedIn，我都没有主动出击，就有一些Recruiter来勾搭，因而拿到OA电面的机会非常高。其次是内推，地里内推的资源很多，小伙伴们也是很热情地给出建议。然后就是直接登录大厂官网找，最后就是找LinkedIn上的Job，我会开着Easy Apply的过滤选项，既然海投我就尽可能地在短时间内广撒网了。<br>
+我不禁心想自己这20YOE还不如没有呢，如果是新手转码，从Junior开始申请反而更容易。可是看着Senior职位的一堆要求自己又胆怯了，只好尽量挑些不带Senior和Entry Level字眼的职位申请了。<br>
+4月底大概海投了近百份简历吧，终于有一个美国大学的Recruiter发email来说想聊聊。20年来第一次和Recruiter电聊，我也是激动得不行，把要说的全都写了下来，半小时把自己从出生长大上大学到出国读书工作全讲了一遍，估计Recruiter也是被我的热情吓到了，小心翼翼地问我说看你在LinkedIn上设置的搜索条件是140K美元，可是我们只能提供125K。这个时候我当然不会谈钱啦，blahblah表达了一番视金钱如粪土只在乎你们的大学环境后就结束了。完事写了一个感谢信，然后音信全无。<br>
+5月初突然有个亚麻Recruiter在LinkedIn上找到我，说他手里有4个亚麻的职位，让我去申请一下。我想也没想就申请了一个，然后他就开始安排电面，这可把我吓坏了，上来就大厂呀。硬着头皮上吧，从可选的日期里挑了最晚的一天，2周以后。<br>
+然后这两周里就只做两件事，一是在Leetcode上挑亚麻高频题拼命刷题，一是参考各种亚麻LP资料按照STAR原则编写自己的小故事。电面开始问了两个BQ，又问了几个数组链表哈希的基础数据结构知识，考了道简单coding题二零，居然就过了。然后就通知安排最终面试一共5轮，明确要考<a href="https://link.1point3acres.com/?url=http%3A%2F%2Fwww.educative.io%2Fcourses%2Fgrokking-the-system-design-interview%3Faffiliate_id%3D5749180081373184%2F">系统设计</a>。天哪我根本没有任何系统设计经验的啊，面试定在了3周以后。<br>
+接下来的3周时间就只做一件事，学习系统设计。学习的资料主要是<a href="https://link.1point3acres.com/?url=https%3A%2F%2Fwww.amazon.com%2FSystem-Design-Interview-Insiders-Guide-ebook%2Fdp%2FB08B3FWYBX">System Design Interview An Insider’s Guide</a>，各种新鲜词汇层出不穷啊，遇到新词就查wikepedia。反复读了两遍，第一遍跟着画图，第二遍按自己的理解重新画图。<br>
+但第二天就到亚麻了，强打起精神迎接首次重大挑战吧。<br>
+第一轮是hiring manager，问了半小时BQ，细节追问得很深。coding做出来了，但是follow-up没答上来。第二轮系统设计一个群聊系统，经典系统设计问题了，回答得自我感觉很满意。第三轮coding也很满意，第四轮coding题目很简单，但是被我改来改去显得比较乱。第五轮纯BQ，准备的小故事已经不够用了啊，没办法重复说一遍吧。<br>
+最后得知没过，如今想来应该是败在BQ上了。毕竟我没有什么拿得出手的项目经验，编的几个小故事听起来弱得一批。反而临时抱佛脚的系统设计是最好的，coding刷到400多题后medium基本都能对付了。<br>
+因为准备亚麻面试，1个半月的时间没有投过简历了。6月下旬又把简历改了一遍，开始疯狂海投。不再把目光局限在美国，加拿大作为主场还是优势更大些。投美国岗位时都会被问到将来是否需要sponsorship？我本想说加拿大公民不需要，可是再一细看sponsorship的说明包括H1B和TN，我心想TN Status还是需要的，于是选择了YES。估计这也直接导致很多拒信吧。<br>
+海投了多少我已记不清，500+吧，期间还不断有Recruiter来骚扰我。那些直接发email过来的中介公司三哥Recruiter最不靠谱，交换完简历和职位信息后就失联了。感觉他们就是为了完成KPI而群发的，根本不是真心招人。<br>
+这期间还发生了一起求职诈骗事件<br>
+电话效果很差，没说上几句话就互相听不到对方了。挂断后对方又拨了过来，连自我介绍都没说完就又断掉了。我心想算了，挂我的公司多了去了，也不在乎你一个。<br>
+然后晚上就收到email说对我的面试表现很满意，要给我offer。我心想不会是骗子吧，可是又能骗我什么呢？骗我免费干活？接着收到一个Word格式的offer，时薪70加元，完全远程办公。我第二天说好啊好啊，怎么开始办公呢？对方给了我一个Telegram的账号让我联系她，说帮我setup远程办公环境。我就注册了Telegram联系上这个人，她说欢迎啊然后发给我一张3K的支票截图说是给我的启动资金。让我把支票存进了银行发回了确认截图，然后她让我e-transfer给某个账户1K用于购买办公设备。<br>
+吼吼吼，跟国内日新月异的电信诈骗杀猪盘相比，国外诈骗手段这么多年真是不思进取，还在玩跳票那老一套。我客客气气地说等过几天我的银行确认了你们的支票没问题以后我才会转钱给你们，对方编了个牵强的理由继续催促无果，发现骗不了我就只好放弃了。果然过了一周银行告知支票跳票了。<br>
+话说回来，那些来自LinkedIn的Recruiter就比较靠谱，会聊会推会安排电面，先后电面了2次巨硬2次抖音1次苹果但都fail了。还有一些Recruiter聊着聊着后就发现我其实是个弱鸡，云也没用过？Java也不会？TCP都不知道？那就谈谈你的强项数据库吧。什么？你连索引采用的是什么数据结构也不知道？(后来查过才知道是B+树)<br>
+我和老婆说这样不行，基础太差，继续面试只会继续失败，不断失败压力好大。老婆安慰我说没关系呀咱们不急啊，反正目前工作已经很好了，慢慢来呗，要不先度个假散散心？<br>
+我说算了，时间宝贵，学得越多发现自己不会的越多。于是我开始系统地学习Java全套教程，用Java把Leetcode旧题重刷一遍，巩固旧题的同时学习了Java。另一方面跟着B站视频教程学习，准备考一个AWS SAA证书，因为我发现几乎每个Recruiter都会问我有没有云使用经验，而我老老实实回答说没有以后很多就凉了。<br>
+地里关于H公司的信息很少，5年来的面经全收集起来也才12道题。第一轮是个VP，主要是聊BQ，最后来个系统设计主要问DB的选择和扩容。感觉一顿吹捧下来对方很开心。第二轮coding，暴力求解很直接嘛，能不能优化？瞎JB折腾了一番后还是不会。然后又出了道经典二零零，秒了。第三轮coding，对方全程不说话，看我一个人在那里挣扎。其实题目不难，可我当时一紧张就卡壳了，凑了个答案出来，但自己清楚是错误的。最后一轮又是周一电面的那个人，原来是hiring manager，聊了聊前面3轮的面试过程，10分钟就结束了。<br>
+面试刚一结束整个人松弛下来，立刻想出了第三轮coding的答案，我TM当时怎么就没想到呢，一点儿都不难的嘛。心中非常懊恼，可是又能怎么办呢，打起精神准备下周的两个电面吧。<br>
+. From 1point 3acres bbs谁能料到运气突然就从天而降了呢，周一收到H公司Recruiter的来信，说我面试表现很好，问我什么时候能聊聊。要不是我知道H公司已经上市，我都要怀疑这又是一个骗子。周二和Recruiter视频，说面试反响很好，决定给我offer。我一边假装激动地写下数字，一边暗暗腹诽我面试表现哪里好了，莫非是第一轮把VP拍舒服了？<br>
+接下来就是根据谈判的10条原则和Recruiter交手了，强调了自己对公司的兴趣，列举了3条提高salary的理由，表示接下来还有2个最终轮面试要准备。事到如今形势已经逆转了，是公司在求着我赶紧签约了。嗯，那我们再等等看吧。来来回回拖了一个多星期，在原offer上各项都增加了5~10K，签定了最终包(加元)：base 155K + RSU 220K (4*25%) + sign-on 20K + relocation 10K。今年就业形势不太好，而且我手里并没有其他offer可以compete。早定早入职，以免夜长梦多。<br>
+回首这半年来我从一无所知开始学习了数据结构、算法、Python、Java、OOD、系统设计、网络、数据库、Git、UML、Hadoop、NoSQL、RESTful、ETL、AWS等等。<br>
+当然coding是重点，关键不在难度，而在于类型。归纳总结题目类型后基本就能做好medium题目了，在我20+场coding中基本全是medium和easy，hard就遇到过一个吧。我自己觉得刷够300道经典题就够了，如今的面试coding还不算太卷，基本上大家都能过及格线吧，不太能够凭coding把大家区分开来。<br>
+由于我之前完全没有系统设计经验，一开始对系统设计很畏惧。系统设计是一个太宽泛的话题了，在此学习过程中不断遭遇全新的领域。我的学习方法就是搜索“某领域”+“快速入门”比如“网络快速入门”，一切以速成为目标。纸上谈兵一旦深入问下去就很容易露馅，但我也没有办法，没经验就是没经验，只能多了解些背景和名词了。<br>
+我个人觉得面试最能让人脱颖而出的其实是BQ，想想看5个进入最终轮面试的候选人coding实力应该都足以解决medium问题，系统设计给出的方案和知识面表现估计也是大同小异，但是BQ表现可就真的千差万别了。每个人的过往项目经验都不一样，如何包装如何表达才能打动面试官？就算大家都用START框架编故事，你如果能让hiring manager感觉你比其他人更fit这个职位，那么你就赢过其他候选人了。尤其是最后几分钟的提问时间，一定要认真准备好反向BQ，这是展示热情和兴趣的最佳机会。<br>
+去年据说是找工的最好年份，而今年的形势就差多了，很多公司Hiring Freeze，我自己也经历过走到最终轮面试但却突然接到消息说招聘暂停了的。我很清楚自己能收获这份offer并非自己实力出众，只能感慨运气太好。</p>
+<h3 id="评论">评论</h3>
+<p>国外的氛围真好，国内多半要转外卖或滴滴了~</p>
+<p>我的天！50岁在职半年自学这么多概念，一个月leetcode 300+，海投500+，这执行力真的绝了！<br>
+我以为我30岁转码已经够努力了，跟你一比简直跟躺着没区别。</p>
+<p>果然心态年轻，想干就干就会心想事成！<br>
+向你学习！！<br>
+同在加拿大，我也是近期面试，遇到的基本都是medium和hard，尤其是hard的题，好几家不同的公司遇到好几道……</p>
+<p>大哥是在职搞的吗？半年学了这么多东西又海投500+，行动力惊人啊<br>
+感觉楼主好有活力执行力也很强，而且遇到困难也总是迎难而上努力解决！有回报是应得的！！<br>
+这大哥心态很年轻。<br>
+很明显，做不做成一件事跟年龄无关，跟努不努力和有没有毅力有关。</p>
+<h2 id="类似链接">类似链接</h2>
+<p>待补充</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>实时监控log日志文件夹下文件</title>
+      <link>https://bp0604.github.io/post/realtime-monitoring-log-files-under-folder/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/realtime-monitoring-log-files-under-folder/</guid>
+      <description>简单工具的有效利用。</description>
+      <content:encoded><![CDATA[<h2 id="使用-tail-命令">使用 tail 命令</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -f /var/log/syslog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tail -f /var/log/syslog /var/log/dmesg
+</span></span></code></pre></div><p>没有颜色</p>
+<h2 id="使用-lnav日志文件浏览器httpslnavorgfeatures">使用 <a href="https://lnav.org/features">lnav（日志文件浏览器）</a></h2>
+<pre tabindex="0"><code>sudo apt install lnav # Ubuntu
+
+sudo dnf install lnav # Fedora
+</code></pre><p>默认显示 <code>/var/log</code> 中的所有日志并开始实时监控。
+还可通过 SQL 查询日志文件</p>
+<h3 id="示范">示范</h3>
+<p>从apache访问日志文件中获取前10个客户端IP地址，并将结果以CSV格式写入标准：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lnav -n <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -c <span style="color:#e6db74">&#39;;SELECT c_ip, count(*) AS total FROM access_log GROUP BY c_ip ORDER BY total DESC LIMIT 10&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -c <span style="color:#e6db74">&#39;:write-csv-to -&#39;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    access.log
+</span></span></code></pre></div><h3 id="lnav-dochttpsdocslnavorgenlatestintrohtml"><a href="https://docs.lnav.org/en/latest/intro.html">Lnav doc</a></h3>
+<p>说实话，在Terminal中显示不直观。还是有UI界面的好用些。<br>
+比如Loki或是Kibana或其他。</p>
+<h2 id="systemd-的-journalctl">systemd 的 journalctl</h2>
+<p>systemd 通过 <code>journalctl</code> 提供日志服务</p>
+<pre tabindex="0"><code>journalctl -f
+
+显示带有解释的错误
+journalctl -xb -p 3
+
+时间控制
+journalctl --since &#34;2020-12-04 06:00:00&#34;
+journalctl --since &#34;2020-12-03&#34; --until &#34;2020-12-05 03:00:00&#34;
+journalctl --since yesterday
+journalctl --since 09:00 --until &#34;1 hour ago&#34;
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Alpine CRUD</title>
+      <link>https://bp0604.github.io/post/alpine-crud/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/alpine-crud/</guid>
+      <description>Alpine简单CRUD示范</description>
+      <content:encoded><![CDATA[<h1 id="homepage">Homepage</h1>
+<p><a href="https://alpinejs.dev/">Alpine.js (alpinejs.dev)</a></p>
+<h2 id="demo">Demo</h2>
+<p>Search at google:<br>
+alpinejs CRUD demo github</p>
+<p><a href="https://github.com/devboyarif/alpinejs-crud">https://github.com/devboyarif/alpinejs-crud</a>
+<a href="https://devboyarif.github.io/alpinejs-crud/">https://devboyarif.github.io/alpinejs-crud/</a></p>
+<h2 id="alpinejs-example">Alpine.js example</h2>
+<p><a href="https://gist.github.com/rg3915/29d7fd11db09bf8c0f226117d3b4db0f">https://gist.github.com/rg3915/29d7fd11db09bf8c0f226117d3b4db0f</a></p>
+<pre tabindex="0"><code>npm install -g json-server
+
+json-server --watch db.json
+</code></pre><p>db.json</p>
+<pre tabindex="0"><code>{
+  &#34;todos&#34;: [
+    {
+      &#34;id&#34;: 1,
+      &#34;task&#34;: &#34;Um&#34;
+    },
+    {
+      &#34;id&#34;: 2,
+      &#34;task&#34;: &#34;Dois&#34;
+    },
+    {
+      &#34;id&#34;: 3,
+      &#34;task&#34;: &#34;Três&#34;
+    }
+  ]
+}
+</code></pre><pre tabindex="0"><code>npm install --global http-server
+
+http-server [path] [options]
+</code></pre><p>index.html</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0, shrink-to-fit=no&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shortcut icon&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://alpinejs.dev/favicon.png&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Alpine JS&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Bulma --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Font-awesome --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- Alpine --&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/alpinejs&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- https://github.com/devboyarif/alpinejs-crud/blob/master/index.html --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!-- https://github.com/danharrin/alpine-tailwind-components/blob/main/select/index.html --&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">is-done</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">line-through</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-3&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x-data</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;getTodos()&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">x-init</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$watch(&#39;task&#39;, value =&gt; {if (value.length &gt; 0) required=false})&#34;</span>
+</span></span><span style="display:flex;"><span>  &gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">form</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">submit</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">prevent</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;saveData&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-inline&#34;</span>
+</span></span><span style="display:flex;"><span>      &gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field is-grouped&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;control&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#f92672">input</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">maxlength</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">:class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;required ? &#39;is-danger&#39; : &#39;&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tarefa&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">x-model</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">autofocus</span>
+</span></span><span style="display:flex;"><span>              &gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">p</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;help is-danger&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">x-show</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;required&#34;</span>
+</span></span><span style="display:flex;"><span>            &gt;
+</span></span><span style="display:flex;"><span>              Favor preencher a tarefa.
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">p</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;help has-text-right&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">x-show</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task.length&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">x-text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;task.length&#34;</span>
+</span></span><span style="display:flex;"><span>            &gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;control&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">button</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button is-info ml-3&#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>
+</span></span><span style="display:flex;"><span>            &gt;
+</span></span><span style="display:flex;"><span>              OK
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">form</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">template</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">x-for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo in todos&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">:key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.id&#34;</span>
+</span></span><span style="display:flex;"><span>          &gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#f92672">td</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">:class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.done ? &#39;is-done&#39; : &#39;&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">x-text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.task&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;toggleDone(todo.id, todo.done ? false : true)&#34;</span>
+</span></span><span style="display:flex;"><span>              &gt;&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">i</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-times has-text-danger ml-3&#34;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">click</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;deleteTask(todo.id)&#34;</span>
+</span></span><span style="display:flex;"><span>                &gt;&lt;/<span style="color:#f92672">i</span>&gt;
+</span></span><span style="display:flex;"><span>              &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#f92672">template</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getTodos</span> <span style="color:#f92672">=</span> () =&gt; ({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://localhost:3000/todos&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">todos</span><span style="color:#f92672">:</span> [],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">task</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">required</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fetch</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">data</span> =&gt; <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data</span>)
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">saveData</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">task</span>) {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">required</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fetch</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">url</span>, {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;POST&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span> },
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">task</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">task</span>
+</span></span><span style="display:flex;"><span>            })
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">init</span>()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">task</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">toggleDone</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">value</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">`http://localhost:3000/todos/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>, {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;PATCH&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span> },
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">done</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">value</span>
+</span></span><span style="display:flex;"><span>            })
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">init</span>()
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">deleteTask</span>(<span style="color:#a6e22e">id</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">`http://localhost:3000/todos/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">id</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>, {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;DELETE&#39;</span>,
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">response</span> =&gt; <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>())
+</span></span><span style="display:flex;"><span>          .<span style="color:#a6e22e">then</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">init</span>()
+</span></span><span style="display:flex;"><span>          })
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://bp0604.github.io/post/obsidian/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/obsidian/</guid>
+      <description>重学</description>
+      <content:encoded><![CDATA[<h1 id="视频">视频</h1>
+<p><a href="https://www.bilibili.com/video/BV18a411r7mt/">也许是B站最好的Obsidian新手教程！爆肝30天，一站式入门双向链接笔记软件_哔哩哔哩_bilibili</a></p>
+<p>实践下上面的内容！</p>
+<h2 id="插件安装">插件安装</h2>
+<p>Template</p>
+<p>Dataview</p>
+<p>阅读pdf</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>翻唱指南wiki</title>
+      <link>https://bp0604.github.io/post/singing-song-guide-wiki/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/singing-song-guide-wiki/</guid>
+      <description>唱歌🎤️是人生来的本能。如何唱得好听，也是一门艺术。</description>
+      <content:encoded><![CDATA[<h2 id="翻唱工具">翻唱工具</h2>
+<p>移除人声并隔离
+<a href="https://vocalremover.org/zh/">https://vocalremover.org/zh/</a></p>
+<h2 id="多年前的指南文章-todo">多年前的指南文章 TODO</h2>
+<p>samplitude</p>
+<h2 id="贴唱混音工程模板">贴唱混音工程模板</h2>
+<p>from flomo
+<a href="http://blog.reamix.org/post/mixing-rpp-template">http://blog.reamix.org/post/mixing-rpp-template</a></p>
+<h2 id="30天让你拥有好声音完结">30天让你拥有好声音（完结）</h2>
+<p><a href="https://www.bilibili.com/video/BV1tb411u7EE?p=1&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2">第1课-打开口腔的秘密_哔哩哔哩_bilibili</a></p>
+<h2 id="龚骏mixer">龚骏Mixer</h2>
+<p><a href="https://space.bilibili.com/21666376">https://space.bilibili.com/21666376</a></p>
+<p>人声贴唱教程系列总结帖<a href="https://s.weibo.com/weibo?q=%23%E6%B7%B7%E9%9F%B3%23">#混音#</a> <a href="https://s.weibo.com/weibo?q=%23%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F%23">#音频后期#</a> <a href="https://s.weibo.com/weibo?q=%23%E5%90%8E%E6%9C%9F%E6%B7%B7%E9%9F%B3%E6%95%99%E7%A8%8B%23">#后期混音教程#</a><br>
+关于贴唱混音你所需要知道的都在这条微博里了，如果看完所有的内容你还不会，emmm<br>
+贴唱混音视频系列：<br>
+混响篇1：<a href="https://weibo.com/tv/v/Ifns4yxLU?fid=1034:4436647803301974">网页链接</a><br>
+混响篇2：<a href="https://weibo.com/tv/v/IhvBS5qxn?fid=1034:4441726547627568">网页链接</a><br>
+伴奏篇：<a href="https://weibo.com/tv/v/IjE0w4Zfq?fid=1034:4446802347229209">网页链接</a><br>
+人声衰减EQ和扫频：<a href="https://www.weibo.com/2099242530/IoYY5CPvX?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+人声压缩和提升EQ：<a href="https://www.weibo.com/2099242530/IwgRh2aDY?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+简易的总线母带处理：<a href="https://www.weibo.com/2099242530/IyB52cLTf?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+贴唱混音实例简析《去追一只鹿》：<a href="https://www.weibo.com/2099242530/IBUmE2n2Y?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a></p>
+<p>混音基础系列的图文教程合集（包含修音）：<br>
+视频<br>
+修节奏：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9407720">网页链接</a><br>
+修音准：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9480850">网页链接</a><br>
+EQ1：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9732781">网页链接</a><br>
+EQ2：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav1005515">网页链接</a></p>
+<p>文章：</p>
+<p>EQ概述：<a href="https://weibo.com/ttarticle/p/show?id=2309404183719509362083&amp;mod=zwenzhang">教你认识 EQ（均衡器）- 影响声音色彩的要素</a><br>
+压缩1：<a href="https://weibo.com/ttarticle/p/show?id=2309404184485460590759">歌曲动态的掌控者 - 压缩效果器（壹）</a><br>
+压缩2：<a href="https://weibo.com/ttarticle/p/show?id=2309404186245264766622&amp;mod=zwenzhang">压缩效果器（贰）- 教你怎么调压缩</a><br>
+压缩实调1(API2500)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187040668343811&amp;mod=zwenzhang">教你用超简单傻瓜式压缩 WAVES - API2500</a><br>
+压缩实调2(CLA-2A)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187464314009135&amp;mod=zwenzhang">教你用超简单傻瓜式压缩（二）CLA-2A</a><br>
+压缩实调3(VSC-2)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187778752593003&amp;mod=zwenzhang">教你用超简单傻瓜式压缩（叁）VSC-2</a><br>
+混响1：<a href="https://weibo.com/ttarticle/p/show?id=2309404189527353776211&amp;mod=zwenzhang">混响效果器（壹）- 美化音色的神器</a><br>
+混响2：<a href="https://weibo.com/ttarticle/p/show?id=2309404189918661319344&amp;mod=zwenzhang">混响效果器（贰）其他重要参数</a><br>
+混响3：<a href="https://weibo.com/ttarticle/p/show?id=2309404191507862151513&amp;mod=zwenzhang">混响效果器（叁）主要混响类型</a><br>
+混响4：<a href="https://weibo.com/ttarticle/p/show?id=2309404192194750728495&amp;mod=zwenzhang">混响效果器（肆）怎么设置混响效果器的参数</a><br>
+混响实调1(H-reverb)：<a href="https://weibo.com/ttarticle/p/show?id=2309404193932404761796&amp;mod=zwenzhang">我常用的混响插件 H-Reverb 介绍与使用法</a><br>
+混响实调2(Fab Pro-R)：<a href="https://weibo.com/ttarticle/p/show?id=2309404194379261703987&amp;mod=zwenzhang">我常用的 Plate 混响插件 Fab Pro R 介绍与使用法</a><br>
+混响实调3(D-verb)：<a href="https://weibo.com/ttarticle/p/show?id=2309404194670258303483&amp;mod=zwenzhang">我常用的 Plate 混响插件 D-verb 介绍</a><br>
+混响实调4(Abbey Road Plate)：<a href="https://weibo.com/ttarticle/p/show?id=2309404195028510620242&amp;mod=zwenzhang">常用 Plate 混响 Abbey Road Plates 介绍与使用法</a></p>
+<p>两个有关小知识：<br>
+BPM:<a href="https://weibo.com/ttarticle/p/show?id=2309404185931153283337&amp;mod=zwenzhang">什么是 BPM，关于数字音乐制作你必须了解的</a><br>
+采样率位深：<a href="https://weibo.com/ttarticle/p/show?id=2309404192932000364219&amp;mod=zwenzhang">采样率和位深，关于数字音乐制作你必须了解的</a></p>
+<p>然后我的教程系列就要告一段落了，有缘再见！ <a href="https://lottery.media.weibo.com/lottery/h5/history/list?mid=4497906817915950">抽奖详情</a></p>
+<h2 id="短视频平台翻唱人声前期处理终极简明教程">短视频平台翻唱人声前期处理终极简明教程</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/507606201">短视频平台翻唱人声前期处理终极简明教程 - 知乎 (zhihu.com)</a></p>
+<h2 id="某宝价值500的直播声卡效果模板真的值吗">某宝价值500的直播声卡效果模板，真的值吗？</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/423156513">某宝价值500的直播声卡效果模板，真的值吗？ - 知乎 (zhihu.com)</a></p>
+<h2 id="效果器序列号">效果器序列号</h2>
+<p>BBE Sonic Sweet Optimized
+SWOP-BHUG-DLDF-CFCF-CIBA-DGDK-DCDD-AJAE-CACP</p>
+<h2 id="贴唱混音插件推荐精">贴唱混音插件推荐（精）</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/139486107">https://zhuanlan.zhihu.com/p/139486107</a></p>
+<p>贴唱混音经验分享与实战演示 | 蝙蝠音乐公开课
+小女孩的声音为例，有修间，调节奏的部分
+<a href="https://www.ixigua.com/7101878347218715143">https://www.ixigua.com/7101878347218715143</a>
+还有母带的相关视频
+<a href="https://www.ixigua.com/7005466884451598879">https://www.ixigua.com/7005466884451598879</a>
+混响
+多段压缩</p>
+<p>简单的贴唱人声后期教程，用尽可能少的步骤达到还不错的效果
+【混响】效果器教程 —— 百万调音必备｜【混音教程】
+<a href="https://www.bilibili.com/video/BV1WS4y1Q75L/">https://www.bilibili.com/video/BV1WS4y1Q75L/</a>
+Delay
+<a href="https://www.bilibili.com/video/BV1C44y1M717?spm_id_from=333.999.0.0">https://www.bilibili.com/video/BV1C44y1M717?spm_id_from=333.999.0.0</a></p>
+<p>混音相关文章 TODO
+<a href="https://www.zhihu.com/people/guo-guo-80-40-26">果果 - 知乎 (zhihu.com)</a></p>
+<p>移除人声并隔离 / BPM查询
+<a href="https://vocalremover.org/zh/">分离人声 [AI] (vocalremover.org)</a></p>
+<p>[挖坑・提纲] 贴唱混音教程（见解心得分享为主）
+<a href="https://www.bilibili.com/read/cv8557248/">https://www.bilibili.com/read/cv8557248/</a></p>
+<h2 id="正确的人声混音效果插件的顺序必学">正确的人声混音效果插件的顺序（必学）</h2>
+<p><a href="https://www.bilibili.com/video/BV1oi4y1y7c4/">https://www.bilibili.com/video/BV1oi4y1y7c4/</a></p>
+<p>总结部分：7:00<br>
+减法 EQ（100Hz 以下、共振峰）
+串联压缩（处理峰值、处理动态）
+加法 EQ（200Hz、5kHz 以上</p>
+<p>空间：延迟 - 混响</p>
+<p>进阶：齿音DeEssing - 自动控制（空间之前）- 染色（这个我不清楚）</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Drone cicd</title>
+      <link>https://bp0604.github.io/post/drone-cicd/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/drone-cicd/</guid>
+      <description>轻量级cicd必选。</description>
+      <content:encoded><![CDATA[<h2 id="资源">资源</h2>
+<p><a href="https://github.com/ruanbekker/drone-gitea-on-docker">https://github.com/ruanbekker/drone-gitea-on-docker</a></p>
+<h2 id="hugo推送github">hugo推送github</h2>
+<p>好像目前用不到？！</p>
+<h2 id="heading"></h2>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>React实践</title>
+      <link>https://bp0604.github.io/post/react-practices/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/react-practices/</guid>
+      <description>看来看去，前端都是跑不掉的。由于国外的项目，大多是以React具多，所以我还是看下React。并且其概念相对来说比较少。</description>
+      <content:encoded><![CDATA[<h2 id="背景">背景</h2>
+<p>真要仔细看，估计得从<a href="https://beta.reactjs.org/">官方文档</a>开始看。
+freecodecamp上也有相关的内容。</p>
+<p>再加上，切图，Css，UI设计那一块。<br>
+不是专业的，没办法弄。</p>
+<h2 id="官方beta文档">官方beta文档</h2>
+<p><a href="https://beta.reactjs.org/learn">https://beta.reactjs.org/learn</a></p>
+<h2 id="react-tutorial-for-beginners">React-Tutorial-For-Beginners</h2>
+<p>Youtube: <a href="https://www.youtube.com/watch?v=fP1C-pXZEe0">https://www.youtube.com/watch?v=fP1C-pXZEe0</a>
+Github Repository: <a href="https://github.com/tombaranowicz/React-Tutorial-For-Beginners">https://github.com/tombaranowicz/React-Tutorial-For-Beginners</a></p>
+<p>Content explained in this video:</p>
+<ul>
+<li>React project setup</li>
+<li>Forms</li>
+<li>Navigation between different pages using Reach Router</li>
+<li>Fetching data from API and mapping into components</li>
+<li>Conditional Rendering</li>
+<li>Class and Function Components</li>
+<li>React Hooks (useState and useEffect)</li>
+</ul>
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        .youtube_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .youtube_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div class="youtube_shortcodes">
+        <iframe class="youtube-player" type="text/html" width="640" height="385"
+            src="https://www.youtube.com/embed/fP1C-pXZEe0?autoplay=0" style="
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 border:0;" allowfullscreen frameborder="0">
+        </iframe>
+    </div>
+</body>
+
+</html>
+
+<h2 id="有意思的项目">有意思的项目</h2>
+<p><a href="https://github.com/boojack/sticky-notes">https://github.com/boojack/sticky-notes</a>
+<a href="https://sticky-notes.onrender.com/">https://sticky-notes.onrender.com/</a></p>
+<p>Building a Url Shortener With Node.Js
+<a href="https://reflectoring.io/node-url-shortener/">https://reflectoring.io/node-url-shortener/</a>
+后端monogdb</p>
+<p><a href="https://appworks.site/">https://appworks.site/</a>
+基于 VS Code 插件的前端研发工具集，让前端开发更快更好更轻松。（阿里巴巴）</p>
+<p>飞冰
+<a href="https://ice.work/docs/guide/start/">https://ice.work/docs/guide/start/</a></p>
+<h2 id="react-template">react template</h2>
+<p>google 搜索上面的关键字: vite react typescript tailwind template</p>
+<p>还需要 route store mock pnpm</p>
+<p><a href="https://vital.josepvidal.dev/">https://vital.josepvidal.dev/</a>
+<a href="https://github.com/fabgrel10/vite-react-starter">https://github.com/fabgrel10/vite-react-starter</a></p>
+<p><a href="https://github.com/cpojer/vite-ts-react-tailwind-template">https://github.com/cpojer/vite-ts-react-tailwind-template</a></p>
+<p><a href="https://github.com/vitejs/awesome-vite">https://github.com/vitejs/awesome-vite</a>
+下面的推荐：</p>
+<ul>
+<li><a href="https://github.com/TeXmeijin/vite-react-ts-tailwind-firebase-starter">vite-react-ts-tailwind-firebase-starter</a> - Starter using Vite + React + TypeScript + Tailwind CSS (daisyUI) + Firebase (v9) + Prettier + ESLint.</li>
+<li><a href="https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite">chrome-extension-boilerplate-react-vite</a> - React + TypeScript + SASS + Prettier + ESLint + GitHub Actions + Chrome Extension Manifest v3.</li>
+</ul>
+<h2 id="admin">Admin</h2>
+<p><a href="https://marmelab.com/react-admin/">React Admin - Open-Source Framework for B2B applications (marmelab.com)</a></p>
+<p>The React Framework For B2B Apps
+React-admin offers the best developer experience, lets you focus on business needs, and build delightful user interfaces.</p>
+<h2 id="react-admin">React-admin</h2>
+<p>[[React admin后台]]</p>
+<h2 id="官网文档">官网文档</h2>
+<p><a href="https://zh-hans.reactjs.org/docs/getting-started.html">https://zh-hans.reactjs.org/docs/getting-started.html</a></p>
+<p><a href="https://beta.reactjs.org/">https://beta.reactjs.org/</a></p>
+<h2 id="amis-基于react">amis 基于react</h2>
+<h2 id="react-2022">React 2022</h2>
+<p><a href="https://blog.esonwong.com/react-2022/">https://blog.esonwong.com/react-2022/</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Srping的RuoYi-Vue与ruoyi-vue-pro</title>
+      <link>https://bp0604.github.io/post/spring-ruoyi-vue-and-ruoyi-vue-pro/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/spring-ruoyi-vue-and-ruoyi-vue-pro/</guid>
+      <description>我想来想去，只能支持到单项目多module化的开发方式。cloud的方式事太多了。多前后端分离，数据库分库就已经不错了。（在100多个表中找Table真是眼花）</description>
+      <content:encoded><![CDATA[<h2 id="项目地址">项目地址</h2>
+<p><a href="https://github.com/yangzongzhuan/RuoYi-Vue/">https://github.com/yangzongzhuan/RuoYi-Vue/</a></p>
+<p>可优先在 Opengrok 上看代码。
+<a href="http://192.168.2.88:18080/">Local Opengrok Search</a>
+http://192.168.2.88:18080/xref/RuoYi-Vue/</p>
+<p>或者 Sourcegraph
+<a href="https://sourcegraph.com/github.com/yangzongzhuan/RuoYi-Vue">https://sourcegraph.com/github.com/yangzongzhuan/RuoYi-Vue</a></p>
+<p>文档：
+<a href="http://ruoyi.vip/">http://ruoyi.vip/</a></p>
+<p>官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！
+<a href="https://github.com/YunaiV/ruoyi-vue-pro">https://github.com/YunaiV/ruoyi-vue-pro</a>
+<a href="https://gitee.com/zhijiantianya/ruoyi-vue-pro">https://gitee.com/zhijiantianya/ruoyi-vue-pro</a>
+文档是收费的。
+199元？</p>
+<p>WK 系列开发框架 - V6 至 V8 Java 微服务 + 网关 + Vue Element 前后端分离
+<a href="https://gitee.com/budwk/budwk">https://gitee.com/budwk/budwk</a></p>
+<h2 id="bilibili-视频">Bilibili 视频</h2>
+<p>若依框架vue版本源码解析（一）手把手教你下载源码，本地启动成功运行项目
+<a href="https://www.bilibili.com/video/BV1YD4y1y74s/?vd_source=95a11d087d5ed1a70b0f82c591dd28c2">若依框架vue版本源码解析（一）手把手教你下载源码，本地启动成功运行项目_哔哩哔哩_bilibili</a></p>
+<p>最火后台管理系统 RuoYi 项目探秘，之二
+<a href="https://juejin.cn/post/7160955143188381727">https://juejin.cn/post/7160955143188381727</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Navicat Premium小知识</title>
+      <link>https://bp0604.github.io/post/navicat-premium-tips/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/navicat-premium-tips/</guid>
+      <description>突然发现有些功能还没有使用过，在这里记录一下。</description>
+      <content:encoded><![CDATA[<h2 id="数据生成">数据生成</h2>
+<p>在Table上右击Date generation，可生成数据。
+记得以前版本好像没这功能。</p>
+<p>也可以使用 存储过程，来生成。
+novel这个开源项目中，有分表的脚本 。</p>
+<h3 id="造数据跑批任务-xxl-job">造数据，跑批任务 xxl-job</h3>
+<p>我在数据库中插入了大概两百万条数据，把造数据的过程也分享给你们
+<a href="https://juejin.cn/post/7095586469145739300">https://juejin.cn/post/7095586469145739300</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">、创建表</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>t_repay_plan<span style="color:#f92672">`</span> (
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>id<span style="color:#f92672">`</span> int(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> AUTO_INCREMENT,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>repay_time<span style="color:#f92672">`</span> datetime <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;还款时间&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>str1<span style="color:#f92672">`</span> int(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">`</span>id<span style="color:#f92672">`</span>)
+</span></span><span style="display:flex;"><span>) ENGINE<span style="color:#f92672">=</span>InnoDB AUTO_INCREMENT<span style="color:#f92672">=</span><span style="color:#ae81ff">3099998</span> <span style="color:#66d9ef">DEFAULT</span> CHARSET<span style="color:#f92672">=</span>utf8mb4
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#ae81ff">2</span><span style="color:#960050;background-color:#1e0010">、创建存储过程</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">delimiter</span> <span style="color:#960050;background-color:#1e0010">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">procedure</span> insert_repayPlan()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">begin</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">declare</span> n int <span style="color:#66d9ef">default</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>while n<span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3000000</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> t_repay_plan(repay_time,str1) <span style="color:#66d9ef">values</span>(concat( CONCAT(FLOOR(<span style="color:#ae81ff">2015</span> <span style="color:#f92672">+</span> (RAND() <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>)),<span style="color:#e6db74">&#39;-&#39;</span>,LPAD(FLOOR(<span style="color:#ae81ff">10</span> <span style="color:#f92672">+</span> (RAND() <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>)),<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>),<span style="color:#e6db74">&#39;-&#39;</span>,LPAD(FLOOR(<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> (RAND() <span style="color:#f92672">*</span> <span style="color:#ae81ff">25</span>)),<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>))),n);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> n <span style="color:#f92672">=</span> n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span> while;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">//</span> <span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">、执行存储过程</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">call</span> insert_repayPlan();
+</span></span></code></pre></div><h2 id="chart图表功能咨询公司杀手锏">Chart图表功能（咨询公司杀手锏）</h2>
+<p>不知是否能代替外部的 metabase，Tableau，fineBI ，finereport之类的可视化工具应用。</p>
+<pre><code>先看下自带的示范，自带了两个 Data Source。
+分别是：CustomerCount(单表) 和 Order（多表联结）
+</code></pre>
+<p><strong>图表支持 Presentation演示。<br>
+还可以设置月份等条件。</strong></p>
+<h3 id="customercount单表">CustomerCount(单表)</h3>
+<p>字段：<br>
+date  online  retail  shopping_mall  total</p>
+<p>图表有5个：<br>
+Customer Online 数字<br>
+Customer Total Visit 数字<br>
+Customer Visit in Each Month 每月数据面积图<br>
+Customer 2022 Visit<br>
+Customer 2021 Visit</p>
+<p>Chart Types 中的 面积图直观。</p>
+<h3 id="order多表联结--来源就是一张xlsx的excel数据-15mb">Order（多表联结）- 来源就是一张xlsx的excel数据 15MB</h3>
+<pre tabindex="0"><code>Customer - Order - OrderProduct - Product
+                                - order_product_extra_info
+</code></pre><p>此处在联表时， order_id 可以有多条内容。（一个order_id 对应多个 OrderProduct）</p>
+<p>order_product_extra_info存放的是：<br>
+op_id<br>
+order_id<br>
+order_product_total_retail_price<br>
+order_product_total_wholesale_price<br>
+order_product_total_profit</p>
+<p>分组后，使用面积图。<br>
+还有每日热力图。</p>
+<h3 id="next---python展示">Next - Python展示</h3>
+<p>使用Python读取excel或csv数据后，展示出来。</p>
+<h2 id="数据同步">数据同步</h2>
+<h2 id="数据建模">数据建模</h2>
+<h2 id="表triggers">表Triggers</h2>
+<p><a href="https://www.cnblogs.com/geaozhang/p/6819648.html">https://www.cnblogs.com/geaozhang/p/6819648.html</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Github开源memos学习</title>
+      <link>https://bp0604.github.io/post/github-opensource-memos-study/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/github-opensource-memos-study/</guid>
+      <description>之前就有看到这个开源项目，并且在ios上可使用快捷方式快速发布随想，但当时翻issues感觉不太成熟。最近发现真的有人部署并使用了它。我打算看下其技术实现，毕竟这是一个完整的正在发展又比较精简的项目。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+<h2 id="项目链接">项目链接</h2>
+<p><a href="https://github.com/usememos/memos">Github</a>
+<a href="https://usememos.com/">Homepage</a>
+<a href="https://demo.usememos.com/">Live Demo</a></p>
+<p><a href="https://www.bytebase.com/zh/database/mysql">MySQL + Bytebase</a>
+MySQL 是世界上最受欢迎的开源数据库。 Bytebase 原生支持 MySQL 数据库来管理架构更改、备份、记录变更历史等。</p>
+<h2 id="技术点">技术点</h2>
+<ul>
+<li>后端 Golang</li>
+<li>前端 React，支持生成每日memo截图。</li>
+</ul>
+<h2 id="开发stepshttpsgithubcomusememosmemosblobmaindocsdevelopmentmd"><a href="https://github.com/usememos/memos/blob/main/docs/development.md">开发Steps</a></h2>
+<pre tabindex="0"><code>1.  pull source code
+git clone https://github.com/usememos/memo
+
+1.  start backend using air(with live reload)
+air -c scripts/.air.toml
+
+3.  start frontend dev server
+cd web &amp;&amp; yarn &amp;&amp; yarn dev
+</code></pre><p>访问  <a href="http://localhost:3000/">http://localhost:3000</a> <br>
+并自带热加载</p>
+<h2 id="后端">后端</h2>
+<h3 id="模块">模块</h3>
+<p>bin/server/main.go</p>
+<pre tabindex="0"><code>metric github.com/usememos/memos/plugin/metrics
+
+github.com/usememos/memos/server
+
+github.com/usememos/memos/server/profile
+
+github.com/usememos/memos/store
+
+DB github.com/usememos/memos/store/db
+</code></pre><p>都在server/server.go中使用</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">e</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">echo</span>.<span style="color:#a6e22e">Echo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Collector</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MetricCollector</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Profile</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">profile</span>.<span style="color:#a6e22e">Profile</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Store</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">Store</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="数据库sqlite">数据库sqlite</h3>
+<p>最新的sql文件
+<a href="https://raw.githubusercontent.com/usememos/memos/main/store/db/migration/prod/LATEST__SCHEMA.sql">https://raw.githubusercontent.com/usememos/memos/main/store/db/migration/prod/LATEST__SCHEMA.sql</a></p>
+<p>migrate记录在 sqlite_schema，migration_history 表中，此处没有列出。
+<a href="https://github.com/usememos/memos/blob/main/store/db/migration_history.go">https://github.com/usememos/memos/blob/main/store/db/migration_history.go</a><br>
+除了migrate，还有seed</p>
+<p>id自增写法，并且直接在字段上设置了 主键：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> AUTOINCREMENT,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">对比</span>mysql写法<span style="color:#960050;background-color:#1e0010">：</span>sqlite <span style="color:#960050;background-color:#1e0010">的</span> autoincrement <span style="color:#960050;background-color:#1e0010">修改为</span> MySQL <span style="color:#960050;background-color:#1e0010">的</span> auto_increment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> TableName (
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>id<span style="color:#f92672">`</span> int(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> AUTO_INCREMENT <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;文章ID&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>title<span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">128</span>) CHARACTER <span style="color:#66d9ef">SET</span> utf8mb4 <span style="color:#66d9ef">COLLATE</span> utf8mb4_general_ci <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;标题&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>created_at<span style="color:#f92672">`</span> <span style="color:#66d9ef">timestamp</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;创建时间&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>updated_at<span style="color:#f92672">`</span> <span style="color:#66d9ef">timestamp</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">UPDATE</span> <span style="color:#66d9ef">CURRENT_TIMESTAMP</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;更新时间&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">`</span>id<span style="color:#f92672">`</span>) <span style="color:#66d9ef">USING</span> BTREE
+</span></span><span style="display:flex;"><span>) ENGINE <span style="color:#f92672">=</span> InnoDB AUTO_INCREMENT <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;文章&#39;</span>;
+</span></span></code></pre></div><p>有一种 限定为 enum的写法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>row_status TEXT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">CHECK</span> (row_status <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;NORMAL&#39;</span>, <span style="color:#e6db74">&#39;ARCHIVED&#39;</span>)) <span style="color:#66d9ef">DEFAULT</span> <span style="color:#e6db74">&#39;NORMAL&#39;</span>,
+</span></span></code></pre></div><p>时间设置为当前时间写法，值为int类型：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>created_ts BIGINT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> (strftime(<span style="color:#e6db74">&#39;%s&#39;</span>, <span style="color:#e6db74">&#39;now&#39;</span>)),
+</span></span><span style="display:flex;"><span>updated_ts BIGINT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> (strftime(<span style="color:#e6db74">&#39;%s&#39;</span>, <span style="color:#e6db74">&#39;now&#39;</span>)),
+</span></span></code></pre></div><p>表有：</p>
+<ul>
+<li>
+<p>user</p>
+</li>
+<li>
+<p>memo</p>
+</li>
+<li>
+<p>memo_organizer 多对多 关联表（一对多，直接在memo中添加user_id就可以），此处为何是多对多？</p>
+</li>
+<li>
+<p>shortcut</p>
+</li>
+<li>
+<p>resource 存放的图片？</p>
+</li>
+<li>
+<p>memo_resource 关联表</p>
+</li>
+<li>
+<p>user_setting 使用的是 key value</p>
+</li>
+<li>
+<p>system_setting</p>
+</li>
+</ul>
+<h3 id="权限token认证">权限token认证</h3>
+<p>echo 框架有 basic auth 的middleware。</p>
+<h3 id="api控制层-swagger-与http服务器-serve">Api控制层 swagger 与http服务器 serve</h3>
+<p>统一返回数据common.go<br>
+composeResponse</p>
+<p>Go web framework<br>
+echo<br>
+<a href="https://github.com/labstack/echo">https://github.com/labstack/echo</a>
+<a href="https://echo.labstack.com/">https://echo.labstack.com/</a>
+有protobuf的第三方包：
+<a href="https://github.com/go-woo/protoc-gen-echo">https://github.com/go-woo/protoc-gen-echo</a>
+有很多的middleware</p>
+<p>路由注册在各个文件中：<br>
+tag.go中：<br>
+registerTagRoutes<br>
+调用了数据库<br>
+memoList, err := s.Store.FindMemoList(ctx, &amp;memoFind)</p>
+<h3 id="数据库层-store与storedb">数据库层 store与store/db</h3>
+<p>直接使用的是 database/sql，<br>
+或许使用 <a href="https://github.com/jmoiron/sqlx">sqlx</a> 更易阅读些。</p>
+<h2 id="前端">前端</h2>
+<p>对应web目录下文件</p>
+<p>后端定位前端文件：
+server/embed_frontend.go 中定义了
+embedFrontend方法</p>
+<p>react hook store的写法， typescript(?的写法和kotlin有点像)，axios，tailwindcss 各种混在一起，完成看不懂了。</p>
+<p>web/src/services 是各种 async 请求。<br>
+web/src/pages 是各种页面。<br>
+有的后缀为 ts，有的为 tsx，不知道区别？<br>
+web/src/less 下有好多 css的文件。
+web/src/labs 下有 html2images</p>
+<p>前端返回接收：web/src/helpers/api.ts</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResponseObject</span>&lt;<span style="color:#f92672">T</span>&gt; <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>: <span style="color:#66d9ef">T</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">error?</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">message?</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>试下看下git提交记录。</p>
+<h3 id="next---不容易难怪python有框架处理前端">Next - 不容易，难怪python有框架处理前端</h3>
+<p>总结，我看了下，难度还不小。</p>
+<h2 id="git提交记录从最初开始看">Git提交记录，从最初开始看</h2>
+<p>工具：</p>
+<ul>
+<li>fork</li>
+<li>gittyup（但有个问题：checkout历史版本时UI会刷新，需要向下找到checkout点）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /Volumes/Work/temp
+</span></span><span style="display:flex;"><span>git clone https://github.com/usememos/memos.git
+</span></span></code></pre></div><p>项目最早提交为：2021/12/8
+路由使用的是 gorilla/mux
+api 中的AuthCheckerMiddleWare
+此时的sql还写的很标准。</p>
+<p>前端为：
+vite react less typescript</p>
+<h2 id="部署前后端打包为单文件">部署（前后端打包为单文件）</h2>
+<p><a href="https://github.com/usememos/memos/blob/main/Dockerfile">https://github.com/usememos/memos/blob/main/Dockerfile</a></p>
+<p><a href="https://github.com/usememos/memos/blob/main/docker-compose.yaml">https://github.com/usememos/memos/blob/main/docker-compose.yaml</a></p>
+<p>web前端目录会build生成在下面的目录：<br>
+./server/dist<br>
+然后由后端打包为单个文件：memos，并放在下面的目录：/usr/local/memos</p>
+<p>通过air的方式，实现热加载。</p>
+<p>ENTRYPOINT [&quot;./memos&quot;, &ldquo;&ndash;mode&rdquo;, &ldquo;prod&rdquo;, &ldquo;&ndash;port&rdquo;, &ldquo;5230&rdquo;]<br>
+启动的参数传入Profile</p>
+<h2 id="更多">更多</h2>
+<h3 id="扩展sqlite导入mysql">扩展：sqlite导入mysql</h3>
+<p>mysql 与 sqlite3 数据库之间相互导入导出(使用工具)
+<a href="https://blog.csdn.net/qq_36546699/article/details/117417574">https://blog.csdn.net/qq_36546699/article/details/117417574</a></p>
+<p>导出为csv，再导入（sqlite=&gt;csv=&gt;mysql）
+<a href="https://cloud.tencent.com/developer/article/1888637">https://cloud.tencent.com/developer/article/1888637</a></p>
+<h5 id="mysql导入为sqlite">mysql导入为sqlite</h5>
+<p>需要用下面工具：
+<a href="https://github.com/dumblob/mysql2sqlite/archive/refs/heads/master.zip">mysql2sqilite</a></p>
+<h5 id="sqlite导入为mysql">sqlite导入为mysql</h5>
+<p>使用 python 代码转换 sqlite3 语法格式文件为 mysql 语法格式文件
+./sqlite3-to-mysql.py dump.sql &gt; new.sql</p>
+<p>sqlite3-to-mysql.py 内容如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#! /usr/bin/env python</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re<span style="color:#f92672">,</span> fileinput<span style="color:#f92672">,</span> tempfile
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> optparse <span style="color:#f92672">import</span> OptionParser
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>IGNOREDPREFIXES <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;PRAGMA&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;BEGIN TRANSACTION;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;COMMIT;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;DELETE FROM sqlite_sequence;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;INSERT INTO &#34;sqlite_sequence&#34;&#39;</span>,
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>REPLACEMAP <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;INTEGER PRIMARY KEY&#34;</span>: <span style="color:#e6db74">&#34;INTEGER AUTO_INCREMENT PRIMARY KEY&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AUTOINCREMENT&#34;</span>: <span style="color:#e6db74">&#34;AUTO_INCREMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;DEFAULT &#39;t&#39;&#34;</span>: <span style="color:#e6db74">&#34;DEFAULT &#39;1&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;DEFAULT &#39;f&#39;&#34;</span>: <span style="color:#e6db74">&#34;DEFAULT &#39;0&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;,&#39;t&#39;&#34;</span>: <span style="color:#e6db74">&#34;,&#39;1&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;,&#39;f&#39;&#34;</span>: <span style="color:#e6db74">&#34;,&#39;0&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replace_match_allcase</span>(line, src, dst):
+</span></span><span style="display:flex;"><span>    line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(src,dst)
+</span></span><span style="display:flex;"><span>    line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(src<span style="color:#f92672">.</span>lower(),dst)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replace</span>(line):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> any(line<span style="color:#f92672">.</span>startswith(prefix) <span style="color:#66d9ef">for</span> prefix <span style="color:#f92672">in</span> IGNOREDPREFIXES):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (src,dst) <span style="color:#f92672">in</span> REPLACEMAP<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        line <span style="color:#f92672">=</span> _replace_match_allcase(line, src, dst)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_backticks</span>(line, in_string):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Replace double quotes by backticks outside (multiline) strings
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;INSERT INTO &#34;table&#34; VALUES (&#39;&#34;string&#34;&#39;);&#39;&#39;&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;INSERT INTO `table` VALUES (</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;&#34;string&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;);&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;INSERT INTO &#34;table&#34; VALUES (&#39;&#34;Heading&#39;&#39;&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;INSERT INTO `table` VALUES (</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;&#34;Heading&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;* &#34;text&#34;:http://link.com&#39;&#39;&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;* &#34;text&#34;:http://link.com&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#34; &#39;);&#34;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#34; &#39;);&#34;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    new <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> line:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>                in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>:
+</span></span><span style="display:flex;"><span>                new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;`&#39;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>            in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>        new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> c
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new, in_string
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_process</span>(opts, lines):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> opts<span style="color:#f92672">.</span>database:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">&#39;&#39;&#39;</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span><span style="color:#e6db74">drop database IF EXISTS </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">create database </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74"> character set utf8;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">grant all on </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">.* to </span><span style="color:#e6db74">{u}</span><span style="color:#e6db74">@&#39;localhost&#39; identified by &#39;</span><span style="color:#e6db74">{p}</span><span style="color:#e6db74">&#39;;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">use </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;&#39;&#39;</span><span style="color:#f92672">.</span>format(d<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>database, u<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>username, p<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>password)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">&#34;SET sql_mode=&#39;NO_BACKSLASH_ESCAPES&#39;;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            line <span style="color:#f92672">=</span> _replace(line)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> line <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        line, in_string <span style="color:#f92672">=</span> _backticks(line, in_string)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_removeNewline</span>(line, in_string):
+</span></span><span style="display:flex;"><span>    new <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> line:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>                in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>            in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>:
+</span></span><span style="display:flex;"><span>                 new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;Newline333&#39;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>:
+</span></span><span style="display:flex;"><span>                 new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;carriagereturn333&#39;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> c
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new, in_string
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replaceNewline</span>(lines):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>           line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;Newline333&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>           line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;carriagereturn333&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_Newline</span>(lines):
+</span></span><span style="display:flex;"><span>    in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> line <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        line, in_string <span style="color:#f92672">=</span> _removeNewline(line, in_string)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    op <span style="color:#f92672">=</span> OptionParser()
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-d&#39;</span>, <span style="color:#e6db74">&#39;--database&#39;</span>)
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-u&#39;</span>, <span style="color:#e6db74">&#39;--username&#39;</span>)
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-p&#39;</span>, <span style="color:#e6db74">&#39;--password&#39;</span>)
+</span></span><span style="display:flex;"><span>    opts, args <span style="color:#f92672">=</span> op<span style="color:#f92672">.</span>parse_args()
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> fileinput<span style="color:#f92672">.</span>input(args))
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> _Newline(lines))
+</span></span><span style="display:flex;"><span>    f <span style="color:#f92672">=</span> tempfile<span style="color:#f92672">.</span>TemporaryFile()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>write(line)
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>seek(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f<span style="color:#f92672">.</span>readlines())
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> _process(opts, lines))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> _replaceNewline(lines):
+</span></span><span style="display:flex;"><span>       print line,
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Hugo搭建记录</title>
+      <link>https://bp0604.github.io/post/hugo-build-steps/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/hugo-build-steps/</guid>
+      <description>大佬们说，只有分享在了网上，才有了前进的动力（精益求精）。我决定把平时学习整理的内容，按时间线发布在博客中，于是就有了这篇文章。</description>
+      <content:encoded><![CDATA[<h2 id="目的">目的</h2>
+<p>使用hugo搭建blog的目的是什么？
+我需要一种时间线式的方式，记录<strong>当下做的事情</strong>（做了什么，有什么成果），相当于做读书笔记与感想，Wiki式的就没有办法按时间线的展示（可参考<a href="https://github.com/Anduin2017/HowToCook">程序员在家做饭方法指南</a>）。
+后续补充整合的内容，需要在版本中记录下来。</p>
+<p>不要放的内容：
+如果是todo类的记录，就不要放在hugo中。（目前在幕布，但没有整理，有点乱）</p>
+<h2 id="快速搭建">快速搭建</h2>
+<p>在Github上找到了一个示范，直接在上面改的。</p>
+<pre tabindex="0"><code>巴西的一位 data 分析的博客
+https://devmedeiros.com/archives/
+https://github.com/devmedeiros/devmedeiros.github.io
+</code></pre><p>由于papermod原版并不支持侧边栏导航，所以找到了增加版：<a href="https://github.com/kahnwong/hugo-PaperModX">papermodx</a><br>
+相关theme使用git submodule的命令安装。</p>
+<p>Bilibili，Youtube视频的插入，参考了：<br>
+<a href="https://www.sulvblog.cn/posts/blog/shortcodes/">https://www.sulvblog.cn/posts/blog/shortcodes/</a></p>
+<p>由于Gitee Pages需要上传身份证来实名认证。所以只好发布在了GithubPages。
+目前是public目录直接推送的方式。</p>
+<h2 id="相关代码位置">相关代码位置</h2>
+<p>源码还是放在 gitee 的hugo下的hugoblog中。<br>
+github pages 是把build出来的public目录，直接推送上去的。</p>
+<pre tabindex="0"><code>本地Preview： 
+cd /Users/baopen/Code/Config/gitee/hugo/hugoblog
+hugo server -D
+visit: http://localhost:1313/
+
+./deploy-github.sh
+visit: https://bp0604.github.io/
+</code></pre><h3 id="后续">后续</h3>
+<p>可以使用 github action 的方式来部署。<br>
+也可以使用 drone cicd 来定时推送。<br>
+也可以在本地使用<a href="https://talk.hyoban.cc/2022/git-github/21">Git post-receive 脚本</a>来完成自动化。</p>
+<h3 id="本地目录同步使用realtimesyncfreefilesync自带">本地目录同步(使用RealTimeSync，Freefilesync自带)</h3>
+<pre tabindex="0"><code>监视的文件夹：
+/Users/baopen/Code/Config/gitee/homelab-config/Hugo/content
+
+命令行：
+open /Applications/FreeFileSync.app /Volumes/Work/FreeFileSync/hugo-from-homelab-to-hugo.ffs_batch
+</code></pre><h2 id="更多">更多</h2>
+<h3 id="theme">theme</h3>
+<p>Doks — Modern Documentation Theme
+<a href="https://doks.netlify.app/docs/prologue/introduction/">Introduction - Doks</a>
+使用：
+<a href="https://mcaptcha.org/">mCaptcha - mCaptcha</a></p>
+<p><a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>
+使用：
+emacstalk
+<a href="https://emacstalk.github.io/post/013/">https://emacstalk.github.io/post/013/</a></p>
+<p>wiki 样式
+<a href="https://github.com/alex-shpak/hugo-book">https://github.com/alex-shpak/hugo-book</a>
+demo:
+<a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a>
+使用：
+<a href="https://tonybai.com/2020/06/27/gohugo-vs-mdbook-vs-peach/">https://tonybai.com/2020/06/27/gohugo-vs-mdbook-vs-peach/</a></p>
+<h2 id="next">Next</h2>
+<p>可以部署在vercel，或者是走cos的静态网页。</p>
+<h3 id="目前问题">目前问题</h3>
+<ul>
+<li>浅色主题时，代码颜色显示有问题。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>OpenAi Whisper in Python</title>
+      <link>https://bp0604.github.io/post/openai-whisper-in-python/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/openai-whisper-in-python/</guid>
+      <description>语音转文字，有Web页可以使用，我是在Bilibili上看到的。</description>
+      <content:encoded><![CDATA[<h2 id="python方式调用">python方式调用</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>\<span style="color:#75715e"># https://www.youtube.com/watch?v=\_xVTgdpokH4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># jupyter notebook </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">!</span>pip install git<span style="color:#f92672">+</span>https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>openai<span style="color:#f92672">/</span>whisper<span style="color:#f92672">.</span>git
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> whisper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#model = whisper.load\_model(&#34;base&#34;)</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> whisper<span style="color:#f92672">.</span>load\_model(<span style="color:#e6db74">&#34;medium&#34;</span>)
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>transcribe(<span style="color:#e6db74">&#34;quickclip.mp3&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#还自带了翻译的功能</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#out = model.transcribe(&#34;quickclip.mp3&#34;, language=&#34;Chinese&#34;)</span>
+</span></span><span style="display:flex;"><span>out
+</span></span></code></pre></div><h2 id="命令行调用from-masscode">命令行调用(from massCode)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda create -n whisper python<span style="color:#f92672">=</span>3.9  
+</span></span><span style="display:flex;"><span>conda activate whisper  
+</span></span><span style="display:flex;"><span>pip install git+https://ghproxy.com/github.com/openai/whisper.git  
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper audio.mp3 --model medium --language Chinese
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper a.mp3  --language en  --model medium
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper Chinese.mp3 --language Chinese  
+</span></span><span style="display:flex;"><span>whisper Chinese.mp3 --language Chinese --model medium
+</span></span></code></pre></div><h2 id="官方说明">官方说明</h2>
+<p><a href="https://github.com/openai/whisper">Github</a></p>
+<p>模型base需要1GB内存，medium需要5GB。</p>
+<h2 id="实际应用">实际应用</h2>
+<p>对于播客爱好者来说，很快，拥有自动高质量转写的播客客户端不再是梦。<br>
+使用Openai-Whisper自动生成语音/视频字幕，优点是：</p>
+<ul>
+<li>识别正确率高、使用方便快捷。</li>
+<li>免费！</li>
+<li>速度比剪映快（剪映也可以免费生成字幕）</li>
+<li>本地运行，不需要上传任何数据，个人隐私数据上有保障。</li>
+</ul>
+<h3 id="生成语音视频字幕">生成语音/视频字幕</h3>
+<p>doc:<br>
+<a href="https://www.bilibili.com/read/cv19254244?spm_id_from=333.999.0.0">https://www.bilibili.com/read/cv19254244?spm_id_from=333.999.0.0</a></p>
+<p>video:<br>
+<a href="https://www.bilibili.com/video/BV1Ng41167Qv/?spm_id_from=333.999.0.0&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2">https://www.bilibili.com/video/BV1Ng41167Qv/?spm_id_from=333.999.0.0&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2</a></p>
+<p>Webui code:<br>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/tree/main">aadnk/whisper-webui at main (huggingface.co)</a>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/tree/main">https://huggingface.co/spaces/aadnk/whisper-webui/tree/main</a></p>
+<p>README中有 docker 运行方法<br>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/blob/main/README.md">https://huggingface.co/spaces/aadnk/whisper-webui/blob/main/README.md</a></p>
+<p>requirements.txt 包含了如下：<br>
+pip3 install -r requirements.txt</p>
+<p>前置条件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install gradio
+</span></span><span style="display:flex;"><span>pip install yt-dlp
+</span></span></code></pre></div><p>下载代码，在snapshot目录下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> huggingface_hub <span style="color:#f92672">import</span> snapshot_download
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>YOUR_TOKEN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;コピーしたアクセストークン&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>snapshot_download(
+</span></span><span style="display:flex;"><span>    repo_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aadnk/whisper-webui&#34;</span>,
+</span></span><span style="display:flex;"><span>    repo_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;space&#34;</span>,
+</span></span><span style="display:flex;"><span>    revision<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span>,
+</span></span><span style="display:flex;"><span>    use_auth_token<span style="color:#f92672">=</span>YOUR_TOKEN,
+</span></span><span style="display:flex;"><span>    cache_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./&#34;</span>)
+</span></span></code></pre></div><p>运行报错 ModuleNotFoundError: No module named</p>
+<pre tabindex="0"><code class="language-text-plain" data-lang="text-plain">cd /Volumes/Work/whisper/spaces--aadnk--whisper-webui/snapshots/8f3aedf265ab966dd57de0f6f54b1164c2d52685
+python app-local.py
+</code></pre><p>解决方法：
+文件都是链接，手动复制代码到文件中，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /Volumes/Work/whisper-webui <span style="color:#f92672">&amp;&amp;</span> python app-local.py
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>http://127.0.0.1:7860/<span style="color:#f92672">](</span>http://127.0.0.1:7860/<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>选项设置：
+较长的音频文件（&gt;10 分钟），建议在 VAD 选项中选择 Silero VAD（Voice Activity Detector）。 <br>
+VAD - Padding (s) 选项：默认1秒，相当前后调整位置。</p>
+<h3 id="实测">实测</h3>
+<p>运行要先下载<a href="https://openaipublic.azureedge.net/main/whisper/models/345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1/medium.pt">模型 medium 1.42G</a>，并放到指定的路径。
+/Users/baopen/.cache/whisper/medium.pt exists, but the SHA256 checksum does not match; re-downloading the file</p>
+<p>错误处代码，把<code>initial_prompt</code> 那行注释点可使用。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Callable for processing an audio file</span>
+</span></span><span style="display:flex;"><span>        whisperCallable <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> audio, segment_index, prompt, detected_language : model<span style="color:#f92672">.</span>transcribe(audio, \
+</span></span><span style="display:flex;"><span>                 language<span style="color:#f92672">=</span>language <span style="color:#66d9ef">if</span> language <span style="color:#66d9ef">else</span> detected_language, task<span style="color:#f92672">=</span>task, \
+</span></span><span style="display:flex;"><span>                 initial_prompt<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_concat_prompt(initial_prompt, prompt) <span style="color:#66d9ef">if</span> segment_index <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> prompt, \
+</span></span><span style="display:flex;"><span>                 <span style="color:#f92672">**</span>decodeOptions)
+</span></span></code></pre></div><p>对应说明：
+<a href="https://github.com/openai/whisper/blob/main/whisper/transcribe.py">https://github.com/openai/whisper/blob/main/whisper/transcribe.py</a></p>
+<p>命令行运行，生成了vtt文件。</p>
+<p>会生成临时文件：<br>
+Deleting source file /var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/11bs3qbe9i.mp3</p>
+<h4 id="2分44秒mp4视频">2分44秒mp4视频</h4>
+<p>CPU 500%占用<br>
+需要10分钟：13:50 - 14:00</p>
+<p>生成临时文件：<br>
+/var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/v0200fg10000cdjq65bc77u91ditj1fg2ttkicym.MP4</p>
+<p>清理临时文件：<br>
+rm /var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/*.mp4</p>
+<h4 id="问题最后面的4句话没有转换到">问题：最后面的4句话没有转换到</h4>
+<p>默认的设置</p>
+<h2 id="next">Next</h2>
+<p>前端使用gradio，后台是whisper模型提供的接口。<br>
+可以再看下相关代码，是如何把一把小的功能集成的。<br>
+比如：多种字幕格式。。。</p>
+<h2 id="补充">补充</h2>
+<h3 id="视频剪辑工具-autocut-by-李沐">视频剪辑工具 AutoCut by 李沐</h3>
+<p>分享如何使用 Whisper 为外语视频自动生成字幕
+ <code>whisper jp.mp4</code>
+视频时长 90 分钟，我使用 3080Ti 显卡转录，用时 10 分钟。
+如果你使用 CPU 转录，时间会增加 5-10 倍。</p>
+<p><a href="https://sspai.com/post/76899">https://sspai.com/post/76899</a></p>
+<p>离线翻译</p>
+<p><a href="https://github.com/argosopentech/argos-translate">https://github.com/argosopentech/argos-translate</a>
+<a href="https://marcoshuerta.com/dash/atp_search/">https://marcoshuerta.com/dash/atp_search/</a></p>
+<h3 id="vtt文件">vtt文件</h3>
+<p>可以使用 vtt to srt 工具。</p>
+<p>VTT 文件是以 WebVTT 字幕格式保存的字幕文件。WebVTT 是一种文本数据格式，用于存储字幕，跟.SRT 字幕格式类似，只是功能上有一定扩展，并且很好的被 HTML5 支持。VTT 文件为视频内容提供字幕、视频文本描述、章节导航以及任何形式与视频、音频内容时间相关的媒体信息，但 VTT 文件不包含任何视频数据。</p>
+<p>WebVTT 全称 Web Video Text Tracks，是通过 HTML5 中的元素来标记额外的文字轨资源。目前 WebVTT 标准依然是处于草案阶段，但其基本功能已被多数浏览器支持。</p>
+<p>大多数在线视频托管服务（例如 YouTube 和 Vimeo）都允许用户使用 VTT 文件为视频添加字幕，就像我们在本地播放器使用外挂字幕文件一样。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API">https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API</a></p>
+<h3 id="srt-字幕生成相关方法">srt 字幕生成相关方法</h3>
+<pre tabindex="0"><code class="language-text-plain" data-lang="text-plain">&#34;&#34;&#34;
+    Write a transcript to a file in SRT format.
+    Example usage:
+        from pathlib import Path
+        from whisper.utils import write_srt
+        result = transcribe(model, audio_path, temperature=temperature, **args)
+        # save SRT
+        audio_basename = Path(audio_path).stem
+        with open(Path(output_dir) / (audio_basename + &#34;.srt&#34;), &#34;w&#34;, encoding=&#34;utf-8&#34;) as srt:
+            write_srt(result[&#34;segments&#34;], file=srt)
+    &#34;&#34;&#34;
+</code></pre>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Reaper DAW 101 part6 -- 远程控制</title>
+      <link>https://bp0604.github.io/post/reaper-daw-101-part6-remote-control/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/reaper-daw-101-part6-remote-control/</guid>
+      <description>Reaper 有很强大的远程网页控制面板，比其他daw强大很多。</description>
+      <content:encoded><![CDATA[<h2 id="网络模式推荐">网络模式（推荐）</h2>
+<p>选择 Web browser interface</p>
+<p>可设置用户名，密码。</p>
+<p>Default interface：
+如果是index.html，有控制按钮。<br>
+有多组监听轨道的情形：选择more_me.html，然后选择监听轨道。</p>
+<p>如何想使用域名访问：</p>
+<p>勾选 Use rc.reaper.fm<br>
+ID取个名字，
+就会有个域名的链接地址。</p>
+<p>iPad或其他终端上打开链接即可，</p>
+<p>当前可用设置链接为：http://192.168.2.32:18080</p>
+<hr>
+<h2 id="midi控制器模式">midi控制器模式</h2>
+<p>此处未演示</p>
+<hr>
+<h2 id="osc模式">OSC模式</h2>
+<p>Preference → Control/OSC/web</p>
+<p>选择 OSC</p>
+<h3 id="daw设置">daw设置</h3>
+<p>Device name: iPad</p>
+<p>Pattern config: Default, LogicTouch for phone?</p>
+<p>Mode: Configure device IP +local port</p>
+<p>Device port: 9005</p>
+<p>Local listen port: 8005 </p>
+<p>Device IP: fix me</p>
+<p>Press Listen Button</p>
+<p>Note:</p>
+<p>如果有多个远程控制，端口号不能重复。</p>
+<h3 id="ipad设置">iPad设置</h3>
+<p>TouchOSC</p>
+<p>Layout: LogicPad</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Reaper for podcast - 初学者快速上手</title>
+      <link>https://bp0604.github.io/post/reaper-for-podcast-beginner-guide/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/reaper-for-podcast-beginner-guide/</guid>
+      <description>Reaper 初学者快速上手，包含剪辑的一些快捷键</description>
+      <content:encoded><![CDATA[<p>链接</p>
+<p><a href="https://www.youtube.com/watch?v=CPeUilYS4rc&amp;t=910s">Reaper for Podcasting: A Beginner&rsquo;s Guide for New Users</a></p>
+<hr>
+<h2 id="设置">设置</h2>
+<p>自动保存备份</p>
+<hr>
+<h2 id="操作">操作</h2>
+<p>波形放大点：cmd shift n(如果split后有多断音频，双击全选，shift n更合适)</p>
+<p>（标准化Normalise Items : Control+Shift+N）</p>
+<p>仍然可以调整Gain值。</p>
+<p>点击，滚轮上下方向放大</p>
+<p>s - split</p>
+<p>delete</p>
+<p>tips: 勾选9个方框的图标后，删除时，会自动向前移吸附。</p>
+<p>选中中间的片段 ctrl + delete删除，使用这种方式快捷。</p>
+<p>勾选，选项-连续滚动，这样，播放时，波形会跟随显示</p>
+<p>可以 grid line 的图标不选，不然只能选择在网格的位置</p>
+<p>fade，拖动两个音频交叉</p>
+<p>导出：file-render</p>
+<p>Mono</p>
+<p>mp3 128kpbs</p>
+<hr>
+<h2 id="后期">后期</h2>
+<p>目前，明显有开头音量大的问题，使用压缩ReaComp，参数为预设。</p>
+<hr>
+<h2 id="参考">参考</h2>
+<p>快捷键大全：</p>
+<p><a href="https://reaperaccessibility.com/index.php/Reaper_shortcut_key_list_by_headings">https://reaperaccessibility.com/index.php/Reaper_shortcut_key_list_by_headings</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>营销 - 如何卖出你的二手房</title>
+      <link>https://bp0604.github.io/post/how-to-sell-second-house/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/how-to-sell-second-house/</guid>
+      <description>Marketing - How to Sell Your Second-hand House。如何才能有效的卖出二手房，还是需要一些系统性的思维方式和手段，本文会给出一些建议。</description>
+      <content:encoded><![CDATA[<h2 id="1提高转化效率">1.提高转化效率</h2>
+<p>就是让看房的客户能够心动</p>
+<h3 id="首先就是清理和清扫">首先就是清理和清扫</h3>
+<p>把家里面破旧杂乱的物品全部处理掉</p>
+<ul>
+<li>可以让房子的空间感更强</li>
+</ul>
+<p>请一个专业的保家阿姨把房子打扫干净， 看起来焕然一新</p>
+<h3 id="第二点家居升级">第二点家居升级</h3>
+<ul>
+<li>把家里面黯淡的灯光搞亮一点</li>
+<li>花钱买一些绿纸和挂画</li>
+<li>软装搭配布置一下，让自己的房子看起来更有品位一点</li>
+</ul>
+<h3 id="第三点找专业的摄影人员来">第三点找专业的摄影人员来</h3>
+<p>拍摄房子小区环境照片以及视频</p>
+<ul>
+<li>拍出这套房子的高级感 后期宣传的时候你都可以用得到</li>
+</ul>
+<h3 id="第四点专门为你这套房子写一套介绍文案用ppt或者word文档">第四点专门为你这套房子写一套介绍文案（用PPT或者word文档）</h3>
+<p>小区周边的板块优势，周边的配套情况，小区的优点， 甚至是房主本人的情况以及发生在这套房子里面 一些有趣的喜悦的事情都可以</p>
+<ul>
+<li>让你的这套房子 有一种与众不同的生命力</li>
+</ul>
+<h3 id="第五点挂牌价要设置在同类产品平均成交价上下">第五点挂牌价要设置在同类产品平均成交价上下</h3>
+<ul>
+<li>这不一定是你的心理价位 但是一定是能够 吸引到客户过来看房的价位</li>
+</ul>
+<h2 id="2获取更多的精准流量">2.获取更多的精准流量</h2>
+<p>有时候不是房子不好
+只是没有找到足够多的客户</p>
+<h3 id="你可以配二三十把钥匙">你可以配二三十把钥匙，</h3>
+<p>给三五公里之类的所有中介门店每家都放一把钥匙，方便看房<br>
+并且邀请中介去家里面看房 让他们对你的房子 有一个直观的印象</p>
+<ul>
+<li>因为一般情况下 中介更愿意推荐自己熟悉的房子</li>
+</ul>
+<h3 id="第二点">第二点</h3>
+<p>每家中介的 我加一下<br>
+把你拍摄的房子照片视频 以及这套房子的介绍文案 都发给他们<br>
+还可以为中介写好朋友圈的文案 他们直接复制粘贴就可以了 并且设置成交奖励</p>
+<h3 id="第三点">第三点</h3>
+<p>非常有亮点的房子 也可以起人拍抖音 发gzh 来拓展流量池</p>
+<h2 id="以上这些动作其实花费不了太多的成b">以上这些动作，其实花费不了太多的成b</h2>
+<p>但是一定能够 大大提升你房子的待看量 转化率以及最终的成交j</p>
+<h2 id="来源与总结">来源与总结</h2>
+<p>22年10月08日，我在抖音上看到 yang102long 有个讲如何卖出你手上的二手房的视频，感觉说得很到位。</p>
+<p>所以使用 whisper 生成了相关的文本，在用<a href="https://naotu.baidu.com/file/f4cd5b9f895b166067b6be346af5ba9f">思维导图</a>整理了下。</p>
+<ul>
+<li>准备（包括相片视频文案）</li>
+<li>宣传</li>
+</ul>
+<p>都不可缺少。</p>
+<p>也适应于其他领域。</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Postman Beginner&#39;s Course - API Testing</title>
+      <link>https://bp0604.github.io/post/youtube-postman-beginners-course-api-testing/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/youtube-postman-beginners-course-api-testing/</guid>
+      <description>Youtube上使用Postman集成测试的入门教程，涉及newman的使用。</description>
+      <content:encoded><![CDATA[<h2 id="链接">链接</h2>
+<p><a href="https://www.youtube.com/watch?v=VywxIQ2ZXw4">Postman Beginner&rsquo;s Course - API Testing</a></p>
+<h2 id="详细">详细</h2>
+<p>设置 变量 {{baseUrl}}<br>
+scope为collection</p>
+<p>edit collection 选到 Variables页<br>
+initial value 是shared的。<br>
+而 current value 是私有的。</p>
+<p>accessToken</p>
+<p>Bearer Token<br>
+{{accessToken}}</p>
+<p>json 选 raw</p>
+<pre tabindex="0"><code>{
+    &#34;userId&#34;: 1,
+    &#34;id&#34;: 2,
+    &#34;title&#34;: &#34;qui est esse&#34;,
+    &#34;body&#34;: &#34;est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla&#34;
+}
+</code></pre><p>Randon test data</p>
+<pre tabindex="0"><code>{
+    &#34;title&#34;: &#34;{{$randomJobTitle}}&#34;,
+    &#34;body&#34;: &#34;bar&#34;,
+    &#34;userId&#34;: 1000
+}
+</code></pre><p>在console 中查看<br>
+Request Body 中内容</p>
+<p>关闭Tabs<br>
+Force to close tabs</p>
+<p>Unit 2 - Test automation with Postman</p>
+<pre><code>⌨️ Lesson 19 - Introduction to test automation (1:01:52)
+⌨️ Lesson 20 - Your first API tests (1:02:52​)
+⌨️ Lesson 21 - Assignment (1:14:55)
+⌨️ Lesson 22 - Postman variables (1:19:20)
+⌨️ Lesson 23 - Extracting data from the response (1:24:13)
+⌨️ Lesson 24 - Assignment (1:36:51)
+⌨️ Lesson 25 - Assignment (1:38:08)
+⌨️ Lesson 26 - Collection runner (1:42:52)
+⌨️ Lesson 27 - Request execution order (1:49:00)
+⌨️ Lesson 28 - Postman monitors (1:53:32)
+⌨️ Lesson 29 - Newman (1:57:45)
+⌨️ Lesson 30 - HTML reports with Newman (2:01:58)
+⌨️ Lesson 30 - CI/CD overview (2:05:28)
+⌨️ Lesson 31 - Conclusion (2:08:24)
+</code></pre>
+<p>Tests 页面 &amp; Test result<br>
+有示范<br>
+<a href="https://learning.postman.com/docs/writing-scripts/test-scripts/">https://learning.postman.com/docs/writing-scripts/test-scripts/</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">test</span>(<span style="color:#e6db74">&#34;Your test name&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jsonData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">jsonData</span>.<span style="color:#a6e22e">value</span>).<span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">eql</span>(<span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">respone</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">resource</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">nonFictionBooks</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">book</span>) =&gt; <span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">availabel</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">true</span> )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nonFictionBooks</span>[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">expect</span>(<span style="color:#a6e22e">book</span>).<span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">be</span>.<span style="color:#a6e22e">an</span>(<span style="color:#e6db74">&#39;object&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">be</span>.<span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">to</span>.<span style="color:#a6e22e">eql</span>..
+</span></span></code></pre></div><p>Global variables</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pm</span>.<span style="color:#a6e22e">globals</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#34;variable key&#34;</span>, <span style="color:#e6db74">&#34;variable value&#34;</span>)
+</span></span></code></pre></div><h2 id="collection-runner">Collection Runner</h2>
+<p>底部的 runner<br>
+然后把 collection 拖过来</p>
+<h1 id="execuate-order">execuate order</h1>
+<p>代码：</p>
+<pre tabindex="0"><code>postman.setNextRequest(&#34;API Status&#34;);
+postman.setNextRequest(null);
+</code></pre><p>如果 循环设置了， 就会一直运行。</p>
+<h1 id="monitor-线上功能">monitor 线上功能</h1>
+<p>不用点击运行。<br>
+Monitor Collection</p>
+<p>Everyday 。。。</p>
+<p>会使用 initial value</p>
+<h1 id="newman-重点">Newman 重点</h1>
+<p>cli tool</p>
+<p>newman &ndash;version</p>
+<p>Collection -&gt; Export<br>
+api key<br>
+share 但更改不会更新，需要重新生成</p>
+<p>newman run export.json</p>
+<p>Running collections on the command line with Newman<br>
+<a href="https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/">https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/</a></p>
+<p>Newman with Docker<br>
+<a href="https://learning.postman.com/docs/running-collections/using-newman-cli/newman-with-docker/">https://learning.postman.com/docs/running-collections/using-newman-cli/newman-with-docker/</a></p>
+<p><a href="https://github.com/postmanlabs/newman">https://github.com/postmanlabs/newman</a></p>
+<h2 id="使用参考--realworld">使用参考  realworld</h2>
+<h2 id="html-report-for-newman">html report for newman</h2>
+<p>newman-reporter-htmlextra</p>
+<p>newman run export.json &ndash;exportors=cli,htmlextra</p>
+<h1 id="cicd-overview">Ci/cd overview</h1>
+<h1 id="more">More</h1>
+<p>mock</p>
+<p>data-driver test<br>
+customer-data.csv</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Leetcode</title>
+      <link>https://bp0604.github.io/post/leetcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/leetcode/</guid>
+      <description>用来熟悉语言特性，似乎不错。</description>
+      <content:encoded><![CDATA[<h2 id="资源">资源</h2>
+<p>代码随想录
+<a href="https://programmercarl.com/">https://programmercarl.com/</a></p>
+<p>算法，原来是同一个仓库
+<a href="https://github.com/TheAlgorithms/Java">https://github.com/TheAlgorithms/Java</a>
+<a href="https://github.com/TheAlgorithms/Python">https://github.com/TheAlgorithms/Python</a>
+用 Python 实现所有算法。该项目是用 Python 语言实现各种算法的集合，主要用于教育和学习。包括搜索、排序、数据结构、机器学习、密码、神经网络等方面。</p>
+<p>精简版答案
+<a href="https://github.com/yifeikong/interview">https://github.com/yifeikong/interview</a></p>
+<p>包含多门语言的实现
+<a href="https://github.com/doocs/leetcode">https://github.com/doocs/leetcode</a></p>
+<p>有基础的情况下刷算法跟着 [代码随想录]( <a href="https://www.programmercarl.com/">https://www.programmercarl.com/</a>) 找同类型题做比较好。</p>
+<p>python leetcode
+<a href="https://github.com/Nriver/leetcode">https://github.com/Nriver/leetcode</a></p>
+<p>acwing
+<a href="https://www.acwing.com/problem/content/1/">https://www.acwing.com/problem/content/1/</a></p>
+<p>neetcode
+<a href="https://neetcode.io/">https://neetcode.io/</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

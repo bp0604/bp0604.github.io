@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>leetcode on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/leetcode/</link>
+    <description>Recent content in leetcode on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright><atom:link href="https://bp0604.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode</title>
+      <link>https://bp0604.github.io/post/leetcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/leetcode/</guid>
+      <description>用来熟悉语言特性，似乎不错。</description>
+      <content:encoded><![CDATA[<h2 id="资源">资源</h2>
+<p>代码随想录
+<a href="https://programmercarl.com/">https://programmercarl.com/</a></p>
+<p>算法，原来是同一个仓库
+<a href="https://github.com/TheAlgorithms/Java">https://github.com/TheAlgorithms/Java</a>
+<a href="https://github.com/TheAlgorithms/Python">https://github.com/TheAlgorithms/Python</a>
+用 Python 实现所有算法。该项目是用 Python 语言实现各种算法的集合，主要用于教育和学习。包括搜索、排序、数据结构、机器学习、密码、神经网络等方面。</p>
+<p>精简版答案
+<a href="https://github.com/yifeikong/interview">https://github.com/yifeikong/interview</a></p>
+<p>包含多门语言的实现
+<a href="https://github.com/doocs/leetcode">https://github.com/doocs/leetcode</a></p>
+<p>有基础的情况下刷算法跟着 [代码随想录]( <a href="https://www.programmercarl.com/">https://www.programmercarl.com/</a>) 找同类型题做比较好。</p>
+<p>python leetcode
+<a href="https://github.com/Nriver/leetcode">https://github.com/Nriver/leetcode</a></p>
+<p>acwing
+<a href="https://www.acwing.com/problem/content/1/">https://www.acwing.com/problem/content/1/</a></p>
+<p>neetcode
+<a href="https://neetcode.io/">https://neetcode.io/</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>mkdocs on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/mkdocs/</link>
+    <description>Recent content in mkdocs on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/mkdocs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mkdocs及静态Markdown站点的思考</title>
+      <link>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</guid>
+      <description>静态Markdown站点需要有什么样的功能的一些思考。</description>
+      <content:encoded><![CDATA[<h2 id="background">Background</h2>
+<p>人人都是产品经理，<br>
+人人都是内容创作者vloger，<br>
+在知识快速迭代的今天， 知识的实践整理输出是必须的。<br>
+而静态markdown站点，无疑是辅助我们输出整理的有效武器。<br>
+弄清哪些功能是必须的，有助于我们选择适应的工具。</p>
+<h2 id="必须的功能">必须的功能</h2>
+<ul>
+<li>支持原生的 markdown 渲染，这样即使迁移也不用更改。</li>
+<li>自带搜索的功能，不需要集成。且搜索页最好当前页显示，减少页面跳转！</li>
+<li>支持文档目录，与文章内大纲的显示，便于长文时导航。</li>
+<li>生成速度不能太慢，特别是文章比较多时。</li>
+<li>最好开箱即用，以便聚焦整理输出。</li>
+</ul>
+<h2 id="参考站点">参考站点</h2>
+<p>mkdocs
+<a href="https://cook.aiurs.co/">程序员做饭指南</a></p>
+<h2 id="修改记录">修改记录</h2>
+<ul>
+<li>2022-12-02：初版</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

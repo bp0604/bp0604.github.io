@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ai on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/ai/</link>
+    <description>Recent content in ai on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAi Whisper in Python</title>
+      <link>https://bp0604.github.io/post/openai-whisper-in-python/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/openai-whisper-in-python/</guid>
+      <description>语音转文字，有Web页可以使用，我是在Bilibili上看到的。</description>
+      <content:encoded><![CDATA[<h2 id="python方式调用">python方式调用</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>\<span style="color:#75715e"># https://www.youtube.com/watch?v=\_xVTgdpokH4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>\<span style="color:#75715e"># jupyter notebook </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">!</span>pip install git<span style="color:#f92672">+</span>https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>openai<span style="color:#f92672">/</span>whisper<span style="color:#f92672">.</span>git
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> whisper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#model = whisper.load\_model(&#34;base&#34;)</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> whisper<span style="color:#f92672">.</span>load\_model(<span style="color:#e6db74">&#34;medium&#34;</span>)
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>transcribe(<span style="color:#e6db74">&#34;quickclip.mp3&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#还自带了翻译的功能</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#out = model.transcribe(&#34;quickclip.mp3&#34;, language=&#34;Chinese&#34;)</span>
+</span></span><span style="display:flex;"><span>out
+</span></span></code></pre></div><h2 id="命令行调用from-masscode">命令行调用(from massCode)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda create -n whisper python<span style="color:#f92672">=</span>3.9  
+</span></span><span style="display:flex;"><span>conda activate whisper  
+</span></span><span style="display:flex;"><span>pip install git+https://ghproxy.com/github.com/openai/whisper.git  
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper audio.mp3 --model medium --language Chinese
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper a.mp3  --language en  --model medium
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>whisper Chinese.mp3 --language Chinese  
+</span></span><span style="display:flex;"><span>whisper Chinese.mp3 --language Chinese --model medium
+</span></span></code></pre></div><h2 id="官方说明">官方说明</h2>
+<p><a href="https://github.com/openai/whisper">Github</a></p>
+<p>模型base需要1GB内存，medium需要5GB。</p>
+<h2 id="实际应用">实际应用</h2>
+<p>对于播客爱好者来说，很快，拥有自动高质量转写的播客客户端不再是梦。<br>
+使用Openai-Whisper自动生成语音/视频字幕，优点是：</p>
+<ul>
+<li>识别正确率高、使用方便快捷。</li>
+<li>免费！</li>
+<li>速度比剪映快（剪映也可以免费生成字幕）</li>
+<li>本地运行，不需要上传任何数据，个人隐私数据上有保障。</li>
+</ul>
+<h3 id="生成语音视频字幕">生成语音/视频字幕</h3>
+<p>doc:<br>
+<a href="https://www.bilibili.com/read/cv19254244?spm_id_from=333.999.0.0">https://www.bilibili.com/read/cv19254244?spm_id_from=333.999.0.0</a></p>
+<p>video:<br>
+<a href="https://www.bilibili.com/video/BV1Ng41167Qv/?spm_id_from=333.999.0.0&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2">https://www.bilibili.com/video/BV1Ng41167Qv/?spm_id_from=333.999.0.0&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2</a></p>
+<p>Webui code:<br>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/tree/main">aadnk/whisper-webui at main (huggingface.co)</a>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/tree/main">https://huggingface.co/spaces/aadnk/whisper-webui/tree/main</a></p>
+<p>README中有 docker 运行方法<br>
+<a href="https://huggingface.co/spaces/aadnk/whisper-webui/blob/main/README.md">https://huggingface.co/spaces/aadnk/whisper-webui/blob/main/README.md</a></p>
+<p>requirements.txt 包含了如下：<br>
+pip3 install -r requirements.txt</p>
+<p>前置条件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pip install gradio
+</span></span><span style="display:flex;"><span>pip install yt-dlp
+</span></span></code></pre></div><p>下载代码，在snapshot目录下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> huggingface_hub <span style="color:#f92672">import</span> snapshot_download
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>YOUR_TOKEN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;コピーしたアクセストークン&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>snapshot_download(
+</span></span><span style="display:flex;"><span>    repo_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aadnk/whisper-webui&#34;</span>,
+</span></span><span style="display:flex;"><span>    repo_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;space&#34;</span>,
+</span></span><span style="display:flex;"><span>    revision<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span>,
+</span></span><span style="display:flex;"><span>    use_auth_token<span style="color:#f92672">=</span>YOUR_TOKEN,
+</span></span><span style="display:flex;"><span>    cache_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;./&#34;</span>)
+</span></span></code></pre></div><p>运行报错 ModuleNotFoundError: No module named</p>
+<pre tabindex="0"><code class="language-text-plain" data-lang="text-plain">cd /Volumes/Work/whisper/spaces--aadnk--whisper-webui/snapshots/8f3aedf265ab966dd57de0f6f54b1164c2d52685
+python app-local.py
+</code></pre><p>解决方法：
+文件都是链接，手动复制代码到文件中，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /Volumes/Work/whisper-webui <span style="color:#f92672">&amp;&amp;</span> python app-local.py
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>http://127.0.0.1:7860/<span style="color:#f92672">](</span>http://127.0.0.1:7860/<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>选项设置：
+较长的音频文件（&gt;10 分钟），建议在 VAD 选项中选择 Silero VAD（Voice Activity Detector）。 <br>
+VAD - Padding (s) 选项：默认1秒，相当前后调整位置。</p>
+<h3 id="实测">实测</h3>
+<p>运行要先下载<a href="https://openaipublic.azureedge.net/main/whisper/models/345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1/medium.pt">模型 medium 1.42G</a>，并放到指定的路径。
+/Users/baopen/.cache/whisper/medium.pt exists, but the SHA256 checksum does not match; re-downloading the file</p>
+<p>错误处代码，把<code>initial_prompt</code> 那行注释点可使用。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Callable for processing an audio file</span>
+</span></span><span style="display:flex;"><span>        whisperCallable <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> audio, segment_index, prompt, detected_language : model<span style="color:#f92672">.</span>transcribe(audio, \
+</span></span><span style="display:flex;"><span>                 language<span style="color:#f92672">=</span>language <span style="color:#66d9ef">if</span> language <span style="color:#66d9ef">else</span> detected_language, task<span style="color:#f92672">=</span>task, \
+</span></span><span style="display:flex;"><span>                 initial_prompt<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_concat_prompt(initial_prompt, prompt) <span style="color:#66d9ef">if</span> segment_index <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> prompt, \
+</span></span><span style="display:flex;"><span>                 <span style="color:#f92672">**</span>decodeOptions)
+</span></span></code></pre></div><p>对应说明：
+<a href="https://github.com/openai/whisper/blob/main/whisper/transcribe.py">https://github.com/openai/whisper/blob/main/whisper/transcribe.py</a></p>
+<p>命令行运行，生成了vtt文件。</p>
+<p>会生成临时文件：<br>
+Deleting source file /var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/11bs3qbe9i.mp3</p>
+<h4 id="2分44秒mp4视频">2分44秒mp4视频</h4>
+<p>CPU 500%占用<br>
+需要10分钟：13:50 - 14:00</p>
+<p>生成临时文件：<br>
+/var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/v0200fg10000cdjq65bc77u91ditj1fg2ttkicym.MP4</p>
+<p>清理临时文件：<br>
+rm /var/folders/ry/rsmhdjjd2nnfwdb64dc734n00000gn/T/*.mp4</p>
+<h4 id="问题最后面的4句话没有转换到">问题：最后面的4句话没有转换到</h4>
+<p>默认的设置</p>
+<h2 id="next">Next</h2>
+<p>前端使用gradio，后台是whisper模型提供的接口。<br>
+可以再看下相关代码，是如何把一把小的功能集成的。<br>
+比如：多种字幕格式。。。</p>
+<h2 id="补充">补充</h2>
+<h3 id="视频剪辑工具-autocut-by-李沐">视频剪辑工具 AutoCut by 李沐</h3>
+<p>分享如何使用 Whisper 为外语视频自动生成字幕
+ <code>whisper jp.mp4</code>
+视频时长 90 分钟，我使用 3080Ti 显卡转录，用时 10 分钟。
+如果你使用 CPU 转录，时间会增加 5-10 倍。</p>
+<p><a href="https://sspai.com/post/76899">https://sspai.com/post/76899</a></p>
+<p>离线翻译</p>
+<p><a href="https://github.com/argosopentech/argos-translate">https://github.com/argosopentech/argos-translate</a>
+<a href="https://marcoshuerta.com/dash/atp_search/">https://marcoshuerta.com/dash/atp_search/</a></p>
+<h3 id="vtt文件">vtt文件</h3>
+<p>可以使用 vtt to srt 工具。</p>
+<p>VTT 文件是以 WebVTT 字幕格式保存的字幕文件。WebVTT 是一种文本数据格式，用于存储字幕，跟.SRT 字幕格式类似，只是功能上有一定扩展，并且很好的被 HTML5 支持。VTT 文件为视频内容提供字幕、视频文本描述、章节导航以及任何形式与视频、音频内容时间相关的媒体信息，但 VTT 文件不包含任何视频数据。</p>
+<p>WebVTT 全称 Web Video Text Tracks，是通过 HTML5 中的元素来标记额外的文字轨资源。目前 WebVTT 标准依然是处于草案阶段，但其基本功能已被多数浏览器支持。</p>
+<p>大多数在线视频托管服务（例如 YouTube 和 Vimeo）都允许用户使用 VTT 文件为视频添加字幕，就像我们在本地播放器使用外挂字幕文件一样。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API">https://developer.mozilla.org/zh-CN/docs/Web/API/WebVTT_API</a></p>
+<h3 id="srt-字幕生成相关方法">srt 字幕生成相关方法</h3>
+<pre tabindex="0"><code class="language-text-plain" data-lang="text-plain">&#34;&#34;&#34;
+    Write a transcript to a file in SRT format.
+    Example usage:
+        from pathlib import Path
+        from whisper.utils import write_srt
+        result = transcribe(model, audio_path, temperature=temperature, **args)
+        # save SRT
+        audio_basename = Path(audio_path).stem
+        with open(Path(output_dir) / (audio_basename + &#34;.srt&#34;), &#34;w&#34;, encoding=&#34;utf-8&#34;) as srt:
+            write_srt(result[&#34;segments&#34;], file=srt)
+    &#34;&#34;&#34;
+</code></pre>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

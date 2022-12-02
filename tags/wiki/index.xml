@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>wiki on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/wiki/</link>
+    <description>Recent content in wiki on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mkdocs及静态Markdown站点的思考</title>
+      <link>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/mkdocs-and-static-markdown-site-thinking/</guid>
+      <description>静态Markdown站点需要有什么样的功能的一些思考。</description>
+      <content:encoded><![CDATA[<h2 id="background">Background</h2>
+<p>人人都是产品经理，<br>
+人人都是内容创作者vloger，<br>
+在知识快速迭代的今天， 知识的实践整理输出是必须的。<br>
+而静态markdown站点，无疑是辅助我们输出整理的有效武器。<br>
+弄清哪些功能是必须的，有助于我们选择适应的工具。</p>
+<h2 id="必须的功能">必须的功能</h2>
+<ul>
+<li>支持原生的 markdown 渲染，这样即使迁移也不用更改。</li>
+<li>自带搜索的功能，不需要集成。且搜索页最好当前页显示，减少页面跳转！</li>
+<li>支持文档目录，与文章内大纲的显示，便于长文时导航。</li>
+<li>生成速度不能太慢，特别是文章比较多时。</li>
+<li>最好开箱即用，以便聚焦整理输出。</li>
+</ul>
+<h2 id="参考站点">参考站点</h2>
+<p>mkdocs
+<a href="https://cook.aiurs.co/">程序员做饭指南</a></p>
+<h2 id="修改记录">修改记录</h2>
+<ul>
+<li>2022-12-02：初版</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>翻唱指南wiki</title>
+      <link>https://bp0604.github.io/post/singing-song-guide-wiki/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/singing-song-guide-wiki/</guid>
+      <description>唱歌🎤️是人生来的本能。如何唱得好听，也是一门艺术。</description>
+      <content:encoded><![CDATA[<h2 id="翻唱工具">翻唱工具</h2>
+<p>移除人声并隔离
+<a href="https://vocalremover.org/zh/">https://vocalremover.org/zh/</a></p>
+<h2 id="多年前的指南文章-todo">多年前的指南文章 TODO</h2>
+<p>samplitude</p>
+<h2 id="贴唱混音工程模板">贴唱混音工程模板</h2>
+<p>from flomo
+<a href="http://blog.reamix.org/post/mixing-rpp-template">http://blog.reamix.org/post/mixing-rpp-template</a></p>
+<h2 id="30天让你拥有好声音完结">30天让你拥有好声音（完结）</h2>
+<p><a href="https://www.bilibili.com/video/BV1tb411u7EE?p=1&amp;vd_source=95a11d087d5ed1a70b0f82c591dd28c2">第1课-打开口腔的秘密_哔哩哔哩_bilibili</a></p>
+<h2 id="龚骏mixer">龚骏Mixer</h2>
+<p><a href="https://space.bilibili.com/21666376">https://space.bilibili.com/21666376</a></p>
+<p>人声贴唱教程系列总结帖<a href="https://s.weibo.com/weibo?q=%23%E6%B7%B7%E9%9F%B3%23">#混音#</a> <a href="https://s.weibo.com/weibo?q=%23%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F%23">#音频后期#</a> <a href="https://s.weibo.com/weibo?q=%23%E5%90%8E%E6%9C%9F%E6%B7%B7%E9%9F%B3%E6%95%99%E7%A8%8B%23">#后期混音教程#</a><br>
+关于贴唱混音你所需要知道的都在这条微博里了，如果看完所有的内容你还不会，emmm<br>
+贴唱混音视频系列：<br>
+混响篇1：<a href="https://weibo.com/tv/v/Ifns4yxLU?fid=1034:4436647803301974">网页链接</a><br>
+混响篇2：<a href="https://weibo.com/tv/v/IhvBS5qxn?fid=1034:4441726547627568">网页链接</a><br>
+伴奏篇：<a href="https://weibo.com/tv/v/IjE0w4Zfq?fid=1034:4446802347229209">网页链接</a><br>
+人声衰减EQ和扫频：<a href="https://www.weibo.com/2099242530/IoYY5CPvX?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+人声压缩和提升EQ：<a href="https://www.weibo.com/2099242530/IwgRh2aDY?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+简易的总线母带处理：<a href="https://www.weibo.com/2099242530/IyB52cLTf?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a><br>
+贴唱混音实例简析《去追一只鹿》：<a href="https://www.weibo.com/2099242530/IBUmE2n2Y?from=page_1005052099242530_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">网页链接</a></p>
+<p>混音基础系列的图文教程合集（包含修音）：<br>
+视频<br>
+修节奏：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9407720">网页链接</a><br>
+修音准：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9480850">网页链接</a><br>
+EQ1：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav9732781">网页链接</a><br>
+EQ2：<a href="https://weibo.cn/sinaurl?u=https%3A%2F%2Fwww.bilibili.com%2Fvideo%2Fav1005515">网页链接</a></p>
+<p>文章：</p>
+<p>EQ概述：<a href="https://weibo.com/ttarticle/p/show?id=2309404183719509362083&amp;mod=zwenzhang">教你认识 EQ（均衡器）- 影响声音色彩的要素</a><br>
+压缩1：<a href="https://weibo.com/ttarticle/p/show?id=2309404184485460590759">歌曲动态的掌控者 - 压缩效果器（壹）</a><br>
+压缩2：<a href="https://weibo.com/ttarticle/p/show?id=2309404186245264766622&amp;mod=zwenzhang">压缩效果器（贰）- 教你怎么调压缩</a><br>
+压缩实调1(API2500)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187040668343811&amp;mod=zwenzhang">教你用超简单傻瓜式压缩 WAVES - API2500</a><br>
+压缩实调2(CLA-2A)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187464314009135&amp;mod=zwenzhang">教你用超简单傻瓜式压缩（二）CLA-2A</a><br>
+压缩实调3(VSC-2)：<a href="https://weibo.com/ttarticle/p/show?id=2309404187778752593003&amp;mod=zwenzhang">教你用超简单傻瓜式压缩（叁）VSC-2</a><br>
+混响1：<a href="https://weibo.com/ttarticle/p/show?id=2309404189527353776211&amp;mod=zwenzhang">混响效果器（壹）- 美化音色的神器</a><br>
+混响2：<a href="https://weibo.com/ttarticle/p/show?id=2309404189918661319344&amp;mod=zwenzhang">混响效果器（贰）其他重要参数</a><br>
+混响3：<a href="https://weibo.com/ttarticle/p/show?id=2309404191507862151513&amp;mod=zwenzhang">混响效果器（叁）主要混响类型</a><br>
+混响4：<a href="https://weibo.com/ttarticle/p/show?id=2309404192194750728495&amp;mod=zwenzhang">混响效果器（肆）怎么设置混响效果器的参数</a><br>
+混响实调1(H-reverb)：<a href="https://weibo.com/ttarticle/p/show?id=2309404193932404761796&amp;mod=zwenzhang">我常用的混响插件 H-Reverb 介绍与使用法</a><br>
+混响实调2(Fab Pro-R)：<a href="https://weibo.com/ttarticle/p/show?id=2309404194379261703987&amp;mod=zwenzhang">我常用的 Plate 混响插件 Fab Pro R 介绍与使用法</a><br>
+混响实调3(D-verb)：<a href="https://weibo.com/ttarticle/p/show?id=2309404194670258303483&amp;mod=zwenzhang">我常用的 Plate 混响插件 D-verb 介绍</a><br>
+混响实调4(Abbey Road Plate)：<a href="https://weibo.com/ttarticle/p/show?id=2309404195028510620242&amp;mod=zwenzhang">常用 Plate 混响 Abbey Road Plates 介绍与使用法</a></p>
+<p>两个有关小知识：<br>
+BPM:<a href="https://weibo.com/ttarticle/p/show?id=2309404185931153283337&amp;mod=zwenzhang">什么是 BPM，关于数字音乐制作你必须了解的</a><br>
+采样率位深：<a href="https://weibo.com/ttarticle/p/show?id=2309404192932000364219&amp;mod=zwenzhang">采样率和位深，关于数字音乐制作你必须了解的</a></p>
+<p>然后我的教程系列就要告一段落了，有缘再见！ <a href="https://lottery.media.weibo.com/lottery/h5/history/list?mid=4497906817915950">抽奖详情</a></p>
+<h2 id="短视频平台翻唱人声前期处理终极简明教程">短视频平台翻唱人声前期处理终极简明教程</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/507606201">短视频平台翻唱人声前期处理终极简明教程 - 知乎 (zhihu.com)</a></p>
+<h2 id="某宝价值500的直播声卡效果模板真的值吗">某宝价值500的直播声卡效果模板，真的值吗？</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/423156513">某宝价值500的直播声卡效果模板，真的值吗？ - 知乎 (zhihu.com)</a></p>
+<h2 id="效果器序列号">效果器序列号</h2>
+<p>BBE Sonic Sweet Optimized
+SWOP-BHUG-DLDF-CFCF-CIBA-DGDK-DCDD-AJAE-CACP</p>
+<h2 id="贴唱混音插件推荐精">贴唱混音插件推荐（精）</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/139486107">https://zhuanlan.zhihu.com/p/139486107</a></p>
+<p>贴唱混音经验分享与实战演示 | 蝙蝠音乐公开课
+小女孩的声音为例，有修间，调节奏的部分
+<a href="https://www.ixigua.com/7101878347218715143">https://www.ixigua.com/7101878347218715143</a>
+还有母带的相关视频
+<a href="https://www.ixigua.com/7005466884451598879">https://www.ixigua.com/7005466884451598879</a>
+混响
+多段压缩</p>
+<p>简单的贴唱人声后期教程，用尽可能少的步骤达到还不错的效果
+【混响】效果器教程 —— 百万调音必备｜【混音教程】
+<a href="https://www.bilibili.com/video/BV1WS4y1Q75L/">https://www.bilibili.com/video/BV1WS4y1Q75L/</a>
+Delay
+<a href="https://www.bilibili.com/video/BV1C44y1M717?spm_id_from=333.999.0.0">https://www.bilibili.com/video/BV1C44y1M717?spm_id_from=333.999.0.0</a></p>
+<p>混音相关文章 TODO
+<a href="https://www.zhihu.com/people/guo-guo-80-40-26">果果 - 知乎 (zhihu.com)</a></p>
+<p>移除人声并隔离 / BPM查询
+<a href="https://vocalremover.org/zh/">分离人声 [AI] (vocalremover.org)</a></p>
+<p>[挖坑・提纲] 贴唱混音教程（见解心得分享为主）
+<a href="https://www.bilibili.com/read/cv8557248/">https://www.bilibili.com/read/cv8557248/</a></p>
+<h2 id="正确的人声混音效果插件的顺序必学">正确的人声混音效果插件的顺序（必学）</h2>
+<p><a href="https://www.bilibili.com/video/BV1oi4y1y7c4/">https://www.bilibili.com/video/BV1oi4y1y7c4/</a></p>
+<p>总结部分：7:00<br>
+减法 EQ（100Hz 以下、共振峰）
+串联压缩（处理峰值、处理动态）
+加法 EQ（200Hz、5kHz 以上</p>
+<p>空间：延迟 - 混响</p>
+<p>进阶：齿音DeEssing - 自动控制（空间之前）- 染色（这个我不清楚）</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

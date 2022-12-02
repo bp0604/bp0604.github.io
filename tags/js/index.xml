@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>js on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/js/</link>
+    <description>Recent content in js on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React实践</title>
+      <link>https://bp0604.github.io/post/react-practices/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/react-practices/</guid>
+      <description>看来看去，前端都是跑不掉的。由于国外的项目，大多是以React具多，所以我还是看下React。并且其概念相对来说比较少。</description>
+      <content:encoded><![CDATA[<h2 id="背景">背景</h2>
+<p>真要仔细看，估计得从<a href="https://beta.reactjs.org/">官方文档</a>开始看。
+freecodecamp上也有相关的内容。</p>
+<p>再加上，切图，Css，UI设计那一块。<br>
+不是专业的，没办法弄。</p>
+<h2 id="官方beta文档">官方beta文档</h2>
+<p><a href="https://beta.reactjs.org/learn">https://beta.reactjs.org/learn</a></p>
+<h2 id="react-tutorial-for-beginners">React-Tutorial-For-Beginners</h2>
+<p>Youtube: <a href="https://www.youtube.com/watch?v=fP1C-pXZEe0">https://www.youtube.com/watch?v=fP1C-pXZEe0</a>
+Github Repository: <a href="https://github.com/tombaranowicz/React-Tutorial-For-Beginners">https://github.com/tombaranowicz/React-Tutorial-For-Beginners</a></p>
+<p>Content explained in this video:</p>
+<ul>
+<li>React project setup</li>
+<li>Forms</li>
+<li>Navigation between different pages using Reach Router</li>
+<li>Fetching data from API and mapping into components</li>
+<li>Conditional Rendering</li>
+<li>Class and Function Components</li>
+<li>React Hooks (useState and useEffect)</li>
+</ul>
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        .youtube_shortcodes {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 66%;
+            margin: auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .youtube_shortcodes iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div class="youtube_shortcodes">
+        <iframe class="youtube-player" type="text/html" width="640" height="385"
+            src="https://www.youtube.com/embed/fP1C-pXZEe0?autoplay=0" style="
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 border:0;" allowfullscreen frameborder="0">
+        </iframe>
+    </div>
+</body>
+
+</html>
+
+<h2 id="有意思的项目">有意思的项目</h2>
+<p><a href="https://github.com/boojack/sticky-notes">https://github.com/boojack/sticky-notes</a>
+<a href="https://sticky-notes.onrender.com/">https://sticky-notes.onrender.com/</a></p>
+<p>Building a Url Shortener With Node.Js
+<a href="https://reflectoring.io/node-url-shortener/">https://reflectoring.io/node-url-shortener/</a>
+后端monogdb</p>
+<p><a href="https://appworks.site/">https://appworks.site/</a>
+基于 VS Code 插件的前端研发工具集，让前端开发更快更好更轻松。（阿里巴巴）</p>
+<p>飞冰
+<a href="https://ice.work/docs/guide/start/">https://ice.work/docs/guide/start/</a></p>
+<h2 id="react-template">react template</h2>
+<p>google 搜索上面的关键字: vite react typescript tailwind template</p>
+<p>还需要 route store mock pnpm</p>
+<p><a href="https://vital.josepvidal.dev/">https://vital.josepvidal.dev/</a>
+<a href="https://github.com/fabgrel10/vite-react-starter">https://github.com/fabgrel10/vite-react-starter</a></p>
+<p><a href="https://github.com/cpojer/vite-ts-react-tailwind-template">https://github.com/cpojer/vite-ts-react-tailwind-template</a></p>
+<p><a href="https://github.com/vitejs/awesome-vite">https://github.com/vitejs/awesome-vite</a>
+下面的推荐：</p>
+<ul>
+<li><a href="https://github.com/TeXmeijin/vite-react-ts-tailwind-firebase-starter">vite-react-ts-tailwind-firebase-starter</a> - Starter using Vite + React + TypeScript + Tailwind CSS (daisyUI) + Firebase (v9) + Prettier + ESLint.</li>
+<li><a href="https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite">chrome-extension-boilerplate-react-vite</a> - React + TypeScript + SASS + Prettier + ESLint + GitHub Actions + Chrome Extension Manifest v3.</li>
+</ul>
+<h2 id="admin">Admin</h2>
+<p><a href="https://marmelab.com/react-admin/">React Admin - Open-Source Framework for B2B applications (marmelab.com)</a></p>
+<p>The React Framework For B2B Apps
+React-admin offers the best developer experience, lets you focus on business needs, and build delightful user interfaces.</p>
+<h2 id="react-admin">React-admin</h2>
+<p>[[React admin后台]]</p>
+<h2 id="官网文档">官网文档</h2>
+<p><a href="https://zh-hans.reactjs.org/docs/getting-started.html">https://zh-hans.reactjs.org/docs/getting-started.html</a></p>
+<p><a href="https://beta.reactjs.org/">https://beta.reactjs.org/</a></p>
+<h2 id="amis-基于react">amis 基于react</h2>
+<h2 id="react-2022">React 2022</h2>
+<p><a href="https://blog.esonwong.com/react-2022/">https://blog.esonwong.com/react-2022/</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

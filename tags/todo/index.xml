@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>todo on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/todo/</link>
+    <description>Recent content in todo on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Sun, 20 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian</title>
+      <link>https://bp0604.github.io/post/obsidian/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/obsidian/</guid>
+      <description>重学</description>
+      <content:encoded><![CDATA[<h1 id="视频">视频</h1>
+<p><a href="https://www.bilibili.com/video/BV18a411r7mt/">也许是B站最好的Obsidian新手教程！爆肝30天，一站式入门双向链接笔记软件_哔哩哔哩_bilibili</a></p>
+<p>实践下上面的内容！</p>
+<h2 id="插件安装">插件安装</h2>
+<p>Template</p>
+<p>Dataview</p>
+<p>阅读pdf</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

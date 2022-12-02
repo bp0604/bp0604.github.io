@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>memos on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/memos/</link>
+    <description>Recent content in memos on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/memos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drone cicd</title>
+      <link>https://bp0604.github.io/post/drone-cicd/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/drone-cicd/</guid>
+      <description>轻量级cicd必选。</description>
+      <content:encoded><![CDATA[<h2 id="资源">资源</h2>
+<p><a href="https://github.com/ruanbekker/drone-gitea-on-docker">https://github.com/ruanbekker/drone-gitea-on-docker</a></p>
+<h2 id="hugo推送github">hugo推送github</h2>
+<p>好像目前用不到？！</p>
+<h2 id="heading"></h2>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Github开源memos学习</title>
+      <link>https://bp0604.github.io/post/github-opensource-memos-study/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/github-opensource-memos-study/</guid>
+      <description>之前就有看到这个开源项目，并且在ios上可使用快捷方式快速发布随想，但当时翻issues感觉不太成熟。最近发现真的有人部署并使用了它。我打算看下其技术实现，毕竟这是一个完整的正在发展又比较精简的项目。</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+<h2 id="项目链接">项目链接</h2>
+<p><a href="https://github.com/usememos/memos">Github</a>
+<a href="https://usememos.com/">Homepage</a>
+<a href="https://demo.usememos.com/">Live Demo</a></p>
+<p><a href="https://www.bytebase.com/zh/database/mysql">MySQL + Bytebase</a>
+MySQL 是世界上最受欢迎的开源数据库。 Bytebase 原生支持 MySQL 数据库来管理架构更改、备份、记录变更历史等。</p>
+<h2 id="技术点">技术点</h2>
+<ul>
+<li>后端 Golang</li>
+<li>前端 React，支持生成每日memo截图。</li>
+</ul>
+<h2 id="开发stepshttpsgithubcomusememosmemosblobmaindocsdevelopmentmd"><a href="https://github.com/usememos/memos/blob/main/docs/development.md">开发Steps</a></h2>
+<pre tabindex="0"><code>1.  pull source code
+git clone https://github.com/usememos/memo
+
+1.  start backend using air(with live reload)
+air -c scripts/.air.toml
+
+3.  start frontend dev server
+cd web &amp;&amp; yarn &amp;&amp; yarn dev
+</code></pre><p>访问  <a href="http://localhost:3000/">http://localhost:3000</a> <br>
+并自带热加载</p>
+<h2 id="后端">后端</h2>
+<h3 id="模块">模块</h3>
+<p>bin/server/main.go</p>
+<pre tabindex="0"><code>metric github.com/usememos/memos/plugin/metrics
+
+github.com/usememos/memos/server
+
+github.com/usememos/memos/server/profile
+
+github.com/usememos/memos/store
+
+DB github.com/usememos/memos/store/db
+</code></pre><p>都在server/server.go中使用</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-golang" data-lang="golang"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">e</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">echo</span>.<span style="color:#a6e22e">Echo</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Collector</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">MetricCollector</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Profile</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">profile</span>.<span style="color:#a6e22e">Profile</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Store</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">store</span>.<span style="color:#a6e22e">Store</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="数据库sqlite">数据库sqlite</h3>
+<p>最新的sql文件
+<a href="https://raw.githubusercontent.com/usememos/memos/main/store/db/migration/prod/LATEST__SCHEMA.sql">https://raw.githubusercontent.com/usememos/memos/main/store/db/migration/prod/LATEST__SCHEMA.sql</a></p>
+<p>migrate记录在 sqlite_schema，migration_history 表中，此处没有列出。
+<a href="https://github.com/usememos/memos/blob/main/store/db/migration_history.go">https://github.com/usememos/memos/blob/main/store/db/migration_history.go</a><br>
+除了migrate，还有seed</p>
+<p>id自增写法，并且直接在字段上设置了 主键：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>  id INTEGER <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> AUTOINCREMENT,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">对比</span>mysql写法<span style="color:#960050;background-color:#1e0010">：</span>sqlite <span style="color:#960050;background-color:#1e0010">的</span> autoincrement <span style="color:#960050;background-color:#1e0010">修改为</span> MySQL <span style="color:#960050;background-color:#1e0010">的</span> auto_increment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> TableName (
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>id<span style="color:#f92672">`</span> int(<span style="color:#ae81ff">11</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> AUTO_INCREMENT <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;文章ID&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>title<span style="color:#f92672">`</span> varchar(<span style="color:#ae81ff">128</span>) CHARACTER <span style="color:#66d9ef">SET</span> utf8mb4 <span style="color:#66d9ef">COLLATE</span> utf8mb4_general_ci <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;标题&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>created_at<span style="color:#f92672">`</span> <span style="color:#66d9ef">timestamp</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;创建时间&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">`</span>updated_at<span style="color:#f92672">`</span> <span style="color:#66d9ef">timestamp</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">UPDATE</span> <span style="color:#66d9ef">CURRENT_TIMESTAMP</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#e6db74">&#39;更新时间&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">`</span>id<span style="color:#f92672">`</span>) <span style="color:#66d9ef">USING</span> BTREE
+</span></span><span style="display:flex;"><span>) ENGINE <span style="color:#f92672">=</span> InnoDB AUTO_INCREMENT <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">COMMENT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;文章&#39;</span>;
+</span></span></code></pre></div><p>有一种 限定为 enum的写法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>row_status TEXT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">CHECK</span> (row_status <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;NORMAL&#39;</span>, <span style="color:#e6db74">&#39;ARCHIVED&#39;</span>)) <span style="color:#66d9ef">DEFAULT</span> <span style="color:#e6db74">&#39;NORMAL&#39;</span>,
+</span></span></code></pre></div><p>时间设置为当前时间写法，值为int类型：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>created_ts BIGINT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> (strftime(<span style="color:#e6db74">&#39;%s&#39;</span>, <span style="color:#e6db74">&#39;now&#39;</span>)),
+</span></span><span style="display:flex;"><span>updated_ts BIGINT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">DEFAULT</span> (strftime(<span style="color:#e6db74">&#39;%s&#39;</span>, <span style="color:#e6db74">&#39;now&#39;</span>)),
+</span></span></code></pre></div><p>表有：</p>
+<ul>
+<li>
+<p>user</p>
+</li>
+<li>
+<p>memo</p>
+</li>
+<li>
+<p>memo_organizer 多对多 关联表（一对多，直接在memo中添加user_id就可以），此处为何是多对多？</p>
+</li>
+<li>
+<p>shortcut</p>
+</li>
+<li>
+<p>resource 存放的图片？</p>
+</li>
+<li>
+<p>memo_resource 关联表</p>
+</li>
+<li>
+<p>user_setting 使用的是 key value</p>
+</li>
+<li>
+<p>system_setting</p>
+</li>
+</ul>
+<h3 id="权限token认证">权限token认证</h3>
+<p>echo 框架有 basic auth 的middleware。</p>
+<h3 id="api控制层-swagger-与http服务器-serve">Api控制层 swagger 与http服务器 serve</h3>
+<p>统一返回数据common.go<br>
+composeResponse</p>
+<p>Go web framework<br>
+echo<br>
+<a href="https://github.com/labstack/echo">https://github.com/labstack/echo</a>
+<a href="https://echo.labstack.com/">https://echo.labstack.com/</a>
+有protobuf的第三方包：
+<a href="https://github.com/go-woo/protoc-gen-echo">https://github.com/go-woo/protoc-gen-echo</a>
+有很多的middleware</p>
+<p>路由注册在各个文件中：<br>
+tag.go中：<br>
+registerTagRoutes<br>
+调用了数据库<br>
+memoList, err := s.Store.FindMemoList(ctx, &amp;memoFind)</p>
+<h3 id="数据库层-store与storedb">数据库层 store与store/db</h3>
+<p>直接使用的是 database/sql，<br>
+或许使用 <a href="https://github.com/jmoiron/sqlx">sqlx</a> 更易阅读些。</p>
+<h2 id="前端">前端</h2>
+<p>对应web目录下文件</p>
+<p>后端定位前端文件：
+server/embed_frontend.go 中定义了
+embedFrontend方法</p>
+<p>react hook store的写法， typescript(?的写法和kotlin有点像)，axios，tailwindcss 各种混在一起，完成看不懂了。</p>
+<p>web/src/services 是各种 async 请求。<br>
+web/src/pages 是各种页面。<br>
+有的后缀为 ts，有的为 tsx，不知道区别？<br>
+web/src/less 下有好多 css的文件。
+web/src/labs 下有 html2images</p>
+<p>前端返回接收：web/src/helpers/api.ts</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ResponseObject</span>&lt;<span style="color:#f92672">T</span>&gt; <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span>: <span style="color:#66d9ef">T</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">error?</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">message?</span>: <span style="color:#66d9ef">string</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>试下看下git提交记录。</p>
+<h3 id="next---不容易难怪python有框架处理前端">Next - 不容易，难怪python有框架处理前端</h3>
+<p>总结，我看了下，难度还不小。</p>
+<h2 id="git提交记录从最初开始看">Git提交记录，从最初开始看</h2>
+<p>工具：</p>
+<ul>
+<li>fork</li>
+<li>gittyup（但有个问题：checkout历史版本时UI会刷新，需要向下找到checkout点）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /Volumes/Work/temp
+</span></span><span style="display:flex;"><span>git clone https://github.com/usememos/memos.git
+</span></span></code></pre></div><p>项目最早提交为：2021/12/8
+路由使用的是 gorilla/mux
+api 中的AuthCheckerMiddleWare
+此时的sql还写的很标准。</p>
+<p>前端为：
+vite react less typescript</p>
+<h2 id="部署前后端打包为单文件">部署（前后端打包为单文件）</h2>
+<p><a href="https://github.com/usememos/memos/blob/main/Dockerfile">https://github.com/usememos/memos/blob/main/Dockerfile</a></p>
+<p><a href="https://github.com/usememos/memos/blob/main/docker-compose.yaml">https://github.com/usememos/memos/blob/main/docker-compose.yaml</a></p>
+<p>web前端目录会build生成在下面的目录：<br>
+./server/dist<br>
+然后由后端打包为单个文件：memos，并放在下面的目录：/usr/local/memos</p>
+<p>通过air的方式，实现热加载。</p>
+<p>ENTRYPOINT [&quot;./memos&quot;, &ldquo;&ndash;mode&rdquo;, &ldquo;prod&rdquo;, &ldquo;&ndash;port&rdquo;, &ldquo;5230&rdquo;]<br>
+启动的参数传入Profile</p>
+<h2 id="更多">更多</h2>
+<h3 id="扩展sqlite导入mysql">扩展：sqlite导入mysql</h3>
+<p>mysql 与 sqlite3 数据库之间相互导入导出(使用工具)
+<a href="https://blog.csdn.net/qq_36546699/article/details/117417574">https://blog.csdn.net/qq_36546699/article/details/117417574</a></p>
+<p>导出为csv，再导入（sqlite=&gt;csv=&gt;mysql）
+<a href="https://cloud.tencent.com/developer/article/1888637">https://cloud.tencent.com/developer/article/1888637</a></p>
+<h5 id="mysql导入为sqlite">mysql导入为sqlite</h5>
+<p>需要用下面工具：
+<a href="https://github.com/dumblob/mysql2sqlite/archive/refs/heads/master.zip">mysql2sqilite</a></p>
+<h5 id="sqlite导入为mysql">sqlite导入为mysql</h5>
+<p>使用 python 代码转换 sqlite3 语法格式文件为 mysql 语法格式文件
+./sqlite3-to-mysql.py dump.sql &gt; new.sql</p>
+<p>sqlite3-to-mysql.py 内容如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#! /usr/bin/env python</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re<span style="color:#f92672">,</span> fileinput<span style="color:#f92672">,</span> tempfile
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> optparse <span style="color:#f92672">import</span> OptionParser
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>IGNOREDPREFIXES <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;PRAGMA&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;BEGIN TRANSACTION;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;COMMIT;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;DELETE FROM sqlite_sequence;&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;INSERT INTO &#34;sqlite_sequence&#34;&#39;</span>,
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>REPLACEMAP <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;INTEGER PRIMARY KEY&#34;</span>: <span style="color:#e6db74">&#34;INTEGER AUTO_INCREMENT PRIMARY KEY&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;AUTOINCREMENT&#34;</span>: <span style="color:#e6db74">&#34;AUTO_INCREMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;DEFAULT &#39;t&#39;&#34;</span>: <span style="color:#e6db74">&#34;DEFAULT &#39;1&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;DEFAULT &#39;f&#39;&#34;</span>: <span style="color:#e6db74">&#34;DEFAULT &#39;0&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;,&#39;t&#39;&#34;</span>: <span style="color:#e6db74">&#34;,&#39;1&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;,&#39;f&#39;&#34;</span>: <span style="color:#e6db74">&#34;,&#39;0&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replace_match_allcase</span>(line, src, dst):
+</span></span><span style="display:flex;"><span>    line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(src,dst)
+</span></span><span style="display:flex;"><span>    line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(src<span style="color:#f92672">.</span>lower(),dst)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replace</span>(line):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> any(line<span style="color:#f92672">.</span>startswith(prefix) <span style="color:#66d9ef">for</span> prefix <span style="color:#f92672">in</span> IGNOREDPREFIXES):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (src,dst) <span style="color:#f92672">in</span> REPLACEMAP<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        line <span style="color:#f92672">=</span> _replace_match_allcase(line, src, dst)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_backticks</span>(line, in_string):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Replace double quotes by backticks outside (multiline) strings
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;INSERT INTO &#34;table&#34; VALUES (&#39;&#34;string&#34;&#39;);&#39;&#39;&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;INSERT INTO `table` VALUES (</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;&#34;string&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;);&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;INSERT INTO &#34;table&#34; VALUES (&#39;&#34;Heading&#39;&#39;&#39;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;INSERT INTO `table` VALUES (</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#39;&#34;Heading&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#39;&#39;&#39;* &#34;text&#34;:http://link.com&#39;&#39;&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#39;* &#34;text&#34;:http://link.com&#39;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt;&gt;&gt; _backticks(&#34; &#39;);&#34;, True)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    (&#34; &#39;);&#34;, False)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    new <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> line:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>                in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>:
+</span></span><span style="display:flex;"><span>                new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;`&#39;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>            in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>        new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> c
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new, in_string
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_process</span>(opts, lines):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> opts<span style="color:#f92672">.</span>database:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">&#39;&#39;&#39;</span><span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span><span style="color:#e6db74">drop database IF EXISTS </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">create database </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74"> character set utf8;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">grant all on </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">.* to </span><span style="color:#e6db74">{u}</span><span style="color:#e6db74">@&#39;localhost&#39; identified by &#39;</span><span style="color:#e6db74">{p}</span><span style="color:#e6db74">&#39;;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">use </span><span style="color:#e6db74">{d}</span><span style="color:#e6db74">;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;&#39;&#39;</span><span style="color:#f92672">.</span>format(d<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>database, u<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>username, p<span style="color:#f92672">=</span>opts<span style="color:#f92672">.</span>password)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> <span style="color:#e6db74">&#34;SET sql_mode=&#39;NO_BACKSLASH_ESCAPES&#39;;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            line <span style="color:#f92672">=</span> _replace(line)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> line <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        line, in_string <span style="color:#f92672">=</span> _backticks(line, in_string)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_removeNewline</span>(line, in_string):
+</span></span><span style="display:flex;"><span>    new <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> line:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>                in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#39;&#34;</span>:
+</span></span><span style="display:flex;"><span>            in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> in_string:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>:
+</span></span><span style="display:flex;"><span>                 new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;Newline333&#39;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>:
+</span></span><span style="display:flex;"><span>                 new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;carriagereturn333&#39;</span>
+</span></span><span style="display:flex;"><span>                 <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        new <span style="color:#f92672">=</span> new <span style="color:#f92672">+</span> c
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new, in_string
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_replaceNewline</span>(lines):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>           line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;Newline333&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>           line <span style="color:#f92672">=</span> line<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;carriagereturn333&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_Newline</span>(lines):
+</span></span><span style="display:flex;"><span>    in_string <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> line <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>           <span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>        line, in_string <span style="color:#f92672">=</span> _removeNewline(line, in_string)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> line
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    op <span style="color:#f92672">=</span> OptionParser()
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-d&#39;</span>, <span style="color:#e6db74">&#39;--database&#39;</span>)
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-u&#39;</span>, <span style="color:#e6db74">&#39;--username&#39;</span>)
+</span></span><span style="display:flex;"><span>    op<span style="color:#f92672">.</span>add_option(<span style="color:#e6db74">&#39;-p&#39;</span>, <span style="color:#e6db74">&#39;--password&#39;</span>)
+</span></span><span style="display:flex;"><span>    opts, args <span style="color:#f92672">=</span> op<span style="color:#f92672">.</span>parse_args()
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> fileinput<span style="color:#f92672">.</span>input(args))
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> _Newline(lines))
+</span></span><span style="display:flex;"><span>    f <span style="color:#f92672">=</span> tempfile<span style="color:#f92672">.</span>TemporaryFile()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> lines:
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>write(line)
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>seek(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> f<span style="color:#f92672">.</span>readlines())
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    lines <span style="color:#f92672">=</span> (l <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> _process(opts, lines))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> _replaceNewline(lines):
+</span></span><span style="display:flex;"><span>       print line,
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div>]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hugo on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo搭建记录</title>
+      <link>https://bp0604.github.io/post/hugo-build-steps/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/hugo-build-steps/</guid>
+      <description>大佬们说，只有分享在了网上，才有了前进的动力（精益求精）。我决定把平时学习整理的内容，按时间线发布在博客中，于是就有了这篇文章。</description>
+      <content:encoded><![CDATA[<h2 id="目的">目的</h2>
+<p>使用hugo搭建blog的目的是什么？
+我需要一种时间线式的方式，记录<strong>当下做的事情</strong>（做了什么，有什么成果），相当于做读书笔记与感想，Wiki式的就没有办法按时间线的展示（可参考<a href="https://github.com/Anduin2017/HowToCook">程序员在家做饭方法指南</a>）。
+后续补充整合的内容，需要在版本中记录下来。</p>
+<p>不要放的内容：
+如果是todo类的记录，就不要放在hugo中。（目前在幕布，但没有整理，有点乱）</p>
+<h2 id="快速搭建">快速搭建</h2>
+<p>在Github上找到了一个示范，直接在上面改的。</p>
+<pre tabindex="0"><code>巴西的一位 data 分析的博客
+https://devmedeiros.com/archives/
+https://github.com/devmedeiros/devmedeiros.github.io
+</code></pre><p>由于papermod原版并不支持侧边栏导航，所以找到了增加版：<a href="https://github.com/kahnwong/hugo-PaperModX">papermodx</a><br>
+相关theme使用git submodule的命令安装。</p>
+<p>Bilibili，Youtube视频的插入，参考了：<br>
+<a href="https://www.sulvblog.cn/posts/blog/shortcodes/">https://www.sulvblog.cn/posts/blog/shortcodes/</a></p>
+<p>由于Gitee Pages需要上传身份证来实名认证。所以只好发布在了GithubPages。
+目前是public目录直接推送的方式。</p>
+<h2 id="相关代码位置">相关代码位置</h2>
+<p>源码还是放在 gitee 的hugo下的hugoblog中。<br>
+github pages 是把build出来的public目录，直接推送上去的。</p>
+<pre tabindex="0"><code>本地Preview： 
+cd /Users/baopen/Code/Config/gitee/hugo/hugoblog
+hugo server -D
+visit: http://localhost:1313/
+
+./deploy-github.sh
+visit: https://bp0604.github.io/
+</code></pre><h3 id="后续">后续</h3>
+<p>可以使用 github action 的方式来部署。<br>
+也可以使用 drone cicd 来定时推送。<br>
+也可以在本地使用<a href="https://talk.hyoban.cc/2022/git-github/21">Git post-receive 脚本</a>来完成自动化。</p>
+<h3 id="本地目录同步使用realtimesyncfreefilesync自带">本地目录同步(使用RealTimeSync，Freefilesync自带)</h3>
+<pre tabindex="0"><code>监视的文件夹：
+/Users/baopen/Code/Config/gitee/homelab-config/Hugo/content
+
+命令行：
+open /Applications/FreeFileSync.app /Volumes/Work/FreeFileSync/hugo-from-homelab-to-hugo.ffs_batch
+</code></pre><h2 id="更多">更多</h2>
+<h3 id="theme">theme</h3>
+<p>Doks — Modern Documentation Theme
+<a href="https://doks.netlify.app/docs/prologue/introduction/">Introduction - Doks</a>
+使用：
+<a href="https://mcaptcha.org/">mCaptcha - mCaptcha</a></p>
+<p><a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>
+使用：
+emacstalk
+<a href="https://emacstalk.github.io/post/013/">https://emacstalk.github.io/post/013/</a></p>
+<p>wiki 样式
+<a href="https://github.com/alex-shpak/hugo-book">https://github.com/alex-shpak/hugo-book</a>
+demo:
+<a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a>
+使用：
+<a href="https://tonybai.com/2020/06/27/gohugo-vs-mdbook-vs-peach/">https://tonybai.com/2020/06/27/gohugo-vs-mdbook-vs-peach/</a></p>
+<h2 id="next">Next</h2>
+<p>可以部署在vercel，或者是走cos的静态网页。</p>
+<h3 id="目前问题">目前问题</h3>
+<ul>
+<li>浅色主题时，代码颜色显示有问题。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

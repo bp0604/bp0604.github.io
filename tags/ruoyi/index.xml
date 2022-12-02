@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ruoyi on Baopeng&#39;s Blog</title>
+    <link>https://bp0604.github.io/tags/ruoyi/</link>
+    <description>Recent content in ruoyi on Baopeng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2021 - 2022 Baopeng</copyright>
+    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bp0604.github.io/tags/ruoyi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Srping的RuoYi-Vue与ruoyi-vue-pro</title>
+      <link>https://bp0604.github.io/post/spring-ruoyi-vue-and-ruoyi-vue-pro/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bp0604.github.io/post/spring-ruoyi-vue-and-ruoyi-vue-pro/</guid>
+      <description>我想来想去，只能支持到单项目多module化的开发方式。cloud的方式事太多了。多前后端分离，数据库分库就已经不错了。（在100多个表中找Table真是眼花）</description>
+      <content:encoded><![CDATA[<h2 id="项目地址">项目地址</h2>
+<p><a href="https://github.com/yangzongzhuan/RuoYi-Vue/">https://github.com/yangzongzhuan/RuoYi-Vue/</a></p>
+<p>可优先在 Opengrok 上看代码。
+<a href="http://192.168.2.88:18080/">Local Opengrok Search</a>
+http://192.168.2.88:18080/xref/RuoYi-Vue/</p>
+<p>或者 Sourcegraph
+<a href="https://sourcegraph.com/github.com/yangzongzhuan/RuoYi-Vue">https://sourcegraph.com/github.com/yangzongzhuan/RuoYi-Vue</a></p>
+<p>文档：
+<a href="http://ruoyi.vip/">http://ruoyi.vip/</a></p>
+<p>官方推荐 🔥 RuoYi-Vue 全新 Pro 版本，优化重构所有功能。基于 Spring Boot + MyBatis Plus + Vue &amp; Element 实现的后台管理系统 + 微信小程序，支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、三方登录、支付、短信、商城等功能。你的 ⭐️ Star ⭐️，是作者生发的动力！
+<a href="https://github.com/YunaiV/ruoyi-vue-pro">https://github.com/YunaiV/ruoyi-vue-pro</a>
+<a href="https://gitee.com/zhijiantianya/ruoyi-vue-pro">https://gitee.com/zhijiantianya/ruoyi-vue-pro</a>
+文档是收费的。
+199元？</p>
+<p>WK 系列开发框架 - V6 至 V8 Java 微服务 + 网关 + Vue Element 前后端分离
+<a href="https://gitee.com/budwk/budwk">https://gitee.com/budwk/budwk</a></p>
+<h2 id="bilibili-视频">Bilibili 视频</h2>
+<p>若依框架vue版本源码解析（一）手把手教你下载源码，本地启动成功运行项目
+<a href="https://www.bilibili.com/video/BV1YD4y1y74s/?vd_source=95a11d087d5ed1a70b0f82c591dd28c2">若依框架vue版本源码解析（一）手把手教你下载源码，本地启动成功运行项目_哔哩哔哩_bilibili</a></p>
+<p>最火后台管理系统 RuoYi 项目探秘，之二
+<a href="https://juejin.cn/post/7160955143188381727">https://juejin.cn/post/7160955143188381727</a></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
